@@ -1,0 +1,52 @@
+
+/* Estilos del formulario de contacto */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-form__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form__group {
+    margin-bottom: 15px;
+}
+
+.contact-form__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.contact-form__button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form__button:hover {
+    background-color: #45a049;
+}
+
+

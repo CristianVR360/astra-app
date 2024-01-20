@@ -1,0 +1,229 @@
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .services .card {
+    margin: 1rem; /* Ajusta el margen según tus preferencias */
+  }
+  
+  
+  .services .card__title--services{
+    font-size: 14pt;
+  }
+  
+  .services .card__description--services{
+    font-size: 10pt;
+    margin-top: 15px;
+  
+  }
+  .services .card {
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    max-width: 21.875rem;
+    height: 28.125rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    color: white;
+  }
+  
+  .services .card > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .services .card__background {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .services .card__content {
+    --flow-space: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: calc(43% - (1 * var(--flow-space))); /* Ajuste en la altura */
+    padding: var(--flow-space) 1.25rem 1.875rem; /* Ajuste en el padding */
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+    );
+  }
+  .services .card__content--container {
+    --flow-space: 1.25rem;
+  }
+  
+  .services .card__title {
+    position: relative;
+    width: fit-content;
+   
+  }
+  
+  .services .card__title::after {
+    content: "";
+    position: absolute;
+    height: 0.3125rem;
+    width: calc(100% + 1.25rem);
+    bottom: calc((1.25rem - 0.5rem) * -1);
+    left: -1.25rem;
+    background-color: var(--brand-color);
+  }
+  
+  .services .card__button {
+    padding: 0.35em 1em;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-top: 9px ;
+    font-weight: bold;
+    border-radius: 0.45em;
+    border: none;
+    background-color: var(--brand-color);
+    font-family: var(--font-title);
+    font-size: 10pt;
+    color: var(--black);
+  }
+  
+  .services .card__button:focus {
+    outline: 2px solid black;
+    outline-offset: -5px;
+  }
+  
+  @media (any-hover: hover) and (any-pointer: fine) {
+    .services .card__content {
+      transform: translateY(62%);
+      transition: transform 500ms ease-out;
+      transition-delay: 500ms;
+    }
+  
+    .services .card__title::after {
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity 1000ms ease-in, transform 500ms ease-out;
+      transition-delay: 500ms;
+      transform-origin: right;
+    }
+  
+    .services .card__background {
+      transition: transform 500ms ease-in;
+    }
+  
+    .services .card__content--container > :not(.card__title),
+    .services .card__button {
+      opacity: 0;
+      transition: transform 500ms ease-out, opacity 500ms ease-out;
+    }
+  
+    .services .card:hover,
+    .services .card:focus-within {
+      transform: scale(1.05);
+      transition: transform 500ms ease-in;
+    }
+  
+    .services .card:hover .card__content,
+    .services .card:focus-within .card__content {
+      transform: translateY(0);
+      transition: transform 500ms ease-in;
+    }
+  
+    .services .card:focus-within .card__content {
+      transition-duration: 0ms;
+    }
+  
+    .services .card:hover .card__background,
+    .services .card:focus-within .card__background {
+      transform: scale(1.3);
+    }
+  
+    .services .card:hover .card__content--container > :not(.card__title),
+    .services .card:hover .card__button,
+    .services .card:focus-within .card__content--container > :not(.card__title),
+    .services .card:focus-within .card__button {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+      transition-delay: 1000ms;
+    }
+  
+    .services .card:hover .card__title::after,
+    .services .card:focus-within .card__title::after {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: opacity 500ms ease-in, transform 500ms ease-in;
+      transition-delay: 500ms;
+    }
+  }
+  
+  
+  
+  
+  .services__title{
+    text-align: center;
+    margin-top: 30px;
+  
+  }
+  
+  
+  
+  
+  
+  /* ... (tu código CSS existente) ... */
+  
+  /* Estilos para el popup */
+  .popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijo en la pantalla, encima de todo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8); /* Fondo semitransparente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+  }
+  
+  .popup__content iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px; /* Ajusta el padding según tus preferencias */
+    cursor: pointer;
+    background-color: var(--brand-color); /* Utiliza el mismo color que el botón de abrir */
+    color: var(--black);
+    border: none;
+    border-radius: 0.45em;
+    font-family: var(--font-title);
+    font-size: 10pt;
+    font-weight: bold;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Añade transición de opacidad */
+  }
+  
+  .popup__close:hover {
+      
+      opacity: 0.5; /* Reduce la opacidad al pasar el ratón */
+  }
