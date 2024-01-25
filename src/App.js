@@ -1,8 +1,7 @@
 import React from 'react';
 import AstraComponent from './components/astra/AstraComponent'; // Ejemplo de componente Astra
 import ChaignalPage from './components/chaignal/ChaignalPage'; // Ejemplo de componente Chaignal
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
+
 import './App.css';
 
 function App() {
@@ -17,9 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <ContentComponent />
-      <Footer />
+      <ContentComponent/>
     </div>
   );
 }

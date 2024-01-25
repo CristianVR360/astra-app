@@ -1,0 +1,61 @@
+.info-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 1000;
+  }
+  
+  .info-modal__content {
+    display: flex;
+    flex-direction: column; /* Asegura que los hijos se organicen en columna */
+    align-items: center; /* Opcional: Alinea los botones al centro del modal */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalFadeIn 0.5s;
+  }
+  
+  .info-modal__close-btn {
+    
+    margin-top: 10px; /* Espacio en la parte superior de cada botón */
+    margin-bottom: 10px; /* Agrega espacio en la parte inferior de cada botón */
+    align-self: flex-end; /* Alinea el botón de cerrar a la derecha */
+    margin-bottom: 20px; /* Espacio debajo del botón cerrar */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .info-modal__btn {
+    /* Estilos para los botones dentro del modal */
+    width: 200px; /* Anchura fija para todos los botones */
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

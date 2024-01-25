@@ -1,3 +1,5 @@
+
+
 .header {
     color: white;
     text-align: center;
@@ -60,6 +62,9 @@
 
 .nav__item {
     margin: 0 10px;
+    padding: 2px 5px;
+    background-color: rgb(86, 73, 196);
+    border-radius: 10px;
 }
 
 .nav__link {
@@ -77,3 +82,4 @@
     font-size: 3em;
     margin-top: 20px;
 }
+
