@@ -5,7 +5,13 @@ import videoSrc from '../../../video/chaignal3-bkgwebsite.mp4';
 import InfoModal from './InfoModal';
 import './ChaignalHeader.css';
 
-const subtitles = ["aqui va puro kotazo", "mas kotazo", "y mas kotazo"];
+const subtitles = [
+  "Tu nueva vida en el sur de Chile, Región de los Ríos",
+  "Parcelas de 5.000 m², con luz, agua y rol incluido",
+  "Parcelas planas, limpias y con orilla de río",
+  "Cerca de la ciudad y con fácil acceso al proyecto a través de la Ruta Internacional 203"
+];
+
 
 function ChaignalPage() {
   const [modalVisible, setModalVisible] = useState(false);
