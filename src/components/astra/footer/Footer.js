@@ -17,12 +17,13 @@ function Footer() {
                 <a href="https://www.instagram.com/astra.360/" className="footer__social-link" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="#" className="footer__social-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" onClick={(e) => e.preventDefault()} className="footer__social-link" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faTiktok} />
                 </a>
-                <a href="#" className="footer__social-link" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} />
+                <a href="#" onClick={(e) => e.preventDefault()} className="footer__social-link" target="_blank" rel="noopener noreferrer">
+                     <FontAwesomeIcon icon={faYoutube} />
                 </a>
+
             </div>
         </div>
     );

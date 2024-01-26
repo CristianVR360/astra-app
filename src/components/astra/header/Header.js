@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="header__background">
         <div className="header__overlay"></div>
-        <iframe 
+        <iframe title="background Astra360"  
           src="https://s3.sa-east-1.amazonaws.com/cristian.tv360/astra360/bkgwebsite/index.html" 
           frameborder="0" 
           className="header__iframe">
