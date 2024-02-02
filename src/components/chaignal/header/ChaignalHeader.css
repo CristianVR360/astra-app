@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
-
-
 .chaignal-container {
     font-family: 'Roboto', sans-serif; /* Ejemplo de tipografía de Google Fonts */
   }
@@ -37,7 +34,7 @@
   .logo-container {
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 47%;
     transform: translate(-50%, -50%);
   }
 
@@ -45,8 +42,6 @@
     max-width: 300px;
    
 }
-  
-  
   
   .hamburger-menu {
     position: absolute;
@@ -94,22 +89,26 @@
     position: absolute;
     top: 50%; /* Empieza en el centro vertical del header */
     left: 50%; /* Empieza en el centro horizontal del header */
-    transform: translate(-50%, 120px); /* Ajusta horizontalmente y mueve hacia abajo */
+    transform: translate(-50%, 110px); /* Ajusta horizontalmente y mueve hacia abajo */
     /* Resto de tus estilos */
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     color: #fff; /* Puedes cambiar este color para que coincida con tu esquema de color */
-    background-color: #007bff; /* Color de fondo - ajusta según tu diseño */
+    background-color: #006c6d; /* Color de fondo - ajusta según tu diseño */
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   
   .chaignal-header__info-btn:hover {
 
-    background-color: #0056b3; /* Color al pasar el mouse - ajusta según tu diseño */
+    background-color: #015455; /* Color al pasar el mouse - ajusta según tu diseño */
   }
   
 
@@ -128,6 +127,7 @@
 
     .chaignal-header__info-btn {
       transform: translate(-50%, 40px); /* Ajusta horizontalmente y mueve hacia abajo */
+      font-size: 15px;
       /* Resto de tus estilos */
     }
     .chaignal__subtitle {

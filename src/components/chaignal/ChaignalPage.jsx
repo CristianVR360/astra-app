@@ -6,9 +6,9 @@ import ChaignalHeader from './header/ChaignalHeader';
 const ChaignalPage = () => {
   return (
     <div>
-      {/* Utiliza el componente ChaignalHeader */}
+     
       <ChaignalHeader />
-      {/* Aquí puedes agregar más contenido para la página si es necesario */}
+      
     </div>
   );
 };

@@ -19,7 +19,11 @@ function Header() {
       <nav className="header__nav">
         <ul className="nav__list">
        
-          <li className="nav__item"><a href="/#contact" className="nav__link">CONTACTO</a></li>
+        <button className="glow-on-hover nav__link" onClick={() => window.open('https://wa.me/+56984305751', '_blank')}>
+  CONTACTO
+</button>
+
+
         </ul>
       </nav>
     </header>

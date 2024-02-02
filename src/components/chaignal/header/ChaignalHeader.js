@@ -4,6 +4,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import videoSrc from '../../../video/chaignal3-bkgwebsite.mp4';
 import InfoModal from './InfoModal';
 import './ChaignalHeader.css';
+import ramas from './ramas-Boton-quiero-saber-más.png';
+
 
 const subtitles = [
   "Tu nueva vida en el sur de Chile, Región de los Ríos",
@@ -46,7 +48,7 @@ function ChaignalPage() {
           <img className="chaignal-logo" src="/parcelas-Chaignal-logo.png" alt="Logo CHAIGNAL" />
         </div>
         {/* Botón para más información */}
-        <button className="chaignal-header__info-btn" onClick={toggleModal}>Más información</button>
+        <button className="chaignal-header__info-btn" onClick={toggleModal}  style={{ backgroundImage: `url(${ramas})` }}>Quiero saber <b> más</b></button>
         {/* Botón de hamburguesa */}
         <div className="hamburger-menu" onClick={toggleModal}>
           <FontAwesomeIcon icon={faBars} />

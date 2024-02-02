@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column; /* Asegura que los hijos se organicen en columna */
     align-items: center; /* Opcional: Alinea los botones al centro del modal */
-    background-color: #fff;
+    background-color: #006c6d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,27 +25,51 @@
   .info-modal__close-btn {
     
     margin-top: 10px; /* Espacio en la parte superior de cada botón */
-    margin-bottom: 10px; /* Agrega espacio en la parte inferior de cada botón */
-    align-self: flex-end; /* Alinea el botón de cerrar a la derecha */
-    margin-bottom: 20px; /* Espacio debajo del botón cerrar */
     font-family: 'Lato', sans-serif;
+    font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: white;
     background: none;
-    border: none;
+    border:1px solid #fff;
+    padding: 3px 20px;
+    
+    border-radius: 40px;
     cursor: pointer;
+
   }
   
   .info-modal__btn {
     /* Estilos para los botones dentro del modal */
     width: 200px; /* Anchura fija para todos los botones */
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 8px 15px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #003839;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+  
+  .info-modal__btn, .info-modal__close-btn {
+    /* Estilos base para los botones, incluyendo el botón de cierre */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Suaviza las transiciones */
+  }
+  
+  .info-modal__btn:hover, .info-modal__btn:focus,
+  .info-modal__close-btn:hover, .info-modal__close-btn:focus {
+    /* Cambia el color de fondo y eleva el botón ligeramente al pasar el mouse o enfocar */
+    background-color: #005a5b; /* Oscurece el botón un poco */
+    transform: translateY(-3px); /* Eleva el botón */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade sombra para efecto de elevación */
+  }
+  
+  /* Opcional: Estilo específico para el botón de cierre si se desea un efecto diferente */
+  .info-modal__close-btn:hover, .info-modal__close-btn:focus {
+    color: #e0e0e0; /* Cambia el color del texto */
+    background-color: #008080; /* Cambia el color de fondo */
+    transform: scale(1.05); /* Hace el botón un poco más grande */
   }
   
   @keyframes modalFadeIn {
