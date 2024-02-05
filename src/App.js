@@ -1,23 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AstraComponent from './components/astra/AstraComponent'; // Ejemplo de componente Astra
-import ChaignalPage from './components/chaignal/ChaignalPage'; // Ejemplo de componente Chaignal
+import ChaignalPage from './components/Proyectos-Inmobiliarios/chaignal/ChaignalPage';
+import LosTordosPage from './components/Proyectos-Inmobiliarios/los-tordos/LosTordosPage'; // Asegúrate de que el nombre del import coincida con el nombre del archivo y export
 
 import './App.css';
 
 function App() {
-  // Lógica para decidir qué componente renderizar basado en la ruta
-  // Esto es un ejemplo y debería ser reemplazado por tu lógica específica
-  const route = window.location.pathname;
-  let ContentComponent = AstraComponent; // El componente por defecto
-
-  if (route.includes('/chaignal')) {
-    ContentComponent = ChaignalPage;
-  }
-
   return (
-    <div className="App">
-      <ContentComponent/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<AstraComponent />} />
+          <Route path="/chaignal" element={<ChaignalPage />} />
+          <Route path="/los-tordos" element={<LosTordosPage />} />
+          {/* Puedes agregar más rutas aquí */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

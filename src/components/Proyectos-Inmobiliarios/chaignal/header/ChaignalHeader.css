@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.chaignal-container {
+    font-family: 'Roboto', sans-serif; /* Ejemplo de tipografía de Google Fonts */
+  }
+  
+  .chaignal-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .chaignal-header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.2));
+    top: 0;
+    left: 0;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+
+.chaignal-logo{
+    max-width: 300px;
+   
+}
+  
+  .hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    color:white;
+    font-size: 30px;
+  }
+  
+  .hamburger-menu:hover {
+    background-color: #3458bd; /* Cambiar a tu color deseado */
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .chaignal__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem; /* Tamaño recomendado para subtítulos */
+    font-weight: 400; /* Peso normal */
+    line-height: 1.4; /* Espaciado entre líneas óptimo para legibilidad */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar sobre fondos variables */
+    margin-bottom: 0.5rem; /* Espaciado inferior para separar del contenido */
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  
+  .fadeIn {
+    opacity: 1; /* Hacer visible */
+  }
+  
+  .fadeOut {
+    opacity: 0; /* Hacer invisible */
+  }
+
+  
+
+  .chaignal-header__info-btn {
+    position: absolute;
+    top: 50%; /* Empieza en el centro vertical del header */
+    left: 50%; /* Empieza en el centro horizontal del header */
+    transform: translate(-50%, 110px); /* Ajusta horizontalmente y mueve hacia abajo */
+    /* Resto de tus estilos */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff; /* Puedes cambiar este color para que coincida con tu esquema de color */
+    background-color: #006c6d; /* Color de fondo - ajusta según tu diseño */
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  .chaignal-header__info-btn:hover {
+
+    background-color: #015455; /* Color al pasar el mouse - ajusta según tu diseño */
+  }
+  
+
+  @media (max-width: 768px) {
+    .chaignal-logo {
+      max-width: 200px; /* Establece el ancho máximo del logo a 200px en dispositivos móviles */
+    }
+    .chaignal-header {
+      height: calc(100vh - 60px); /* Ajusta '60px' según la altura de tu barra de navegación */
+      /* ... otros estilos que quieras modificar para móviles ... */
+    }
+    .logo-container {
+      position: absolute;
+      top: 40%;
+    }
+
+    .chaignal-header__info-btn {
+      transform: translate(-50%, 40px); /* Ajusta horizontalmente y mueve hacia abajo */
+      font-size: 15px;
+      /* Resto de tus estilos */
+    }
+    .chaignal__subtitle {
+      bottom: 30px;
+    } 
+  }
