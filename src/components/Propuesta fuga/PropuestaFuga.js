@@ -12,7 +12,7 @@ const PropuestaFuga = () => {
   const [activeImage, setActiveImage] = useState(inmobiliariaImg);
   const [activeContent, setActiveContent] = useState({
     title: "Título del Primer Slider",
-    description: "Descripción breve del contenido del primer slider.",
+    description: "Estimado equipo de Fugapucon.cl, En Astra 360, comprendemos la importancia de mantener una imagen digital moderna y atractiva, especialmente en el competitivo mercado inmobiliario de Pucón. Con este objetivo en mente, nos complace presentarles nuestra propuesta personalizada para la renovación integral de su presencia digital.",
   });
 
   const services = [
