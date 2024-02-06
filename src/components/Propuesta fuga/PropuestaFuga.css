@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.propuesta-fuga {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  --background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambiado de 'center' a 'flex-start' para permitir alineación desde el principio */
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.propuesta-fuga__logo {
+  max-width: 200px; /* Ajusta según el tamaño de tu logo */
+  margin: 20px auto; /* Centra el logo */
+  margin-top: 30%;
+}
+
+.propuesta-fuga__background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.propuesta-fuga__background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-image) no-repeat center center;
+  background-size: cover;
+  animation: kenBurnsEffect 18s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes kenBurnsEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.propuesta-fuga__menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.propuesta-fuga__menu-item {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.5s ease, background-color 0.3s;
+}
+
+.propuesta-fuga__menu-item:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.propuesta-fuga__content {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los hijos */
+  justify-content: center; /* Centra verticalmente los hijos */
+  height: calc(100vh - 150px - 40px);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  color: #fff;
+}
+.propuesta-fuga__content p {
+  margin-top: auto; /* Empuja el párrafo hacia abajo */
+  padding: 20px; /* Añade un padding en la parte inferior para mantener la estética */
+  font-size: 14pt;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  max-width: 600px;
+  text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+  .propuesta-fuga__menu {
+    flex-direction: column; /* Cambia la disposición a vertical */
+    padding: 10px 0; /* Ajusta el padding para reducir el espacio vertical */
+    top: 20px; /* Reduce el espacio desde el top para economizar el espacio */
+  }
+
+  .propuesta-fuga__menu-item {
+    margin: 5px 0; /* Reduce el margen entre elementos */
+    padding: 5px 10px; /* Reduce el padding para que los elementos ocupen menos espacio */
+  }
+
+  .propuesta-fuga__content p {
+    font-size: 10pt;
+  }
+}

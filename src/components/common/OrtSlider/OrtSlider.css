@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.ort-slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  --background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+}
+
+.ort-slider__background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ort-slider__background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-image) no-repeat center center;
+  background-size: cover;
+  animation: kenBurnsEffect 18s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes kenBurnsEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.ort-slider__menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.ort-slider__menu-item {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.5s ease, background-color 0.3s;
+}
+
+.ort-slider__menu-item:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.7);
+}

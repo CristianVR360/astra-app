@@ -32,7 +32,7 @@ function ChaignalPage() {
         setSubtitleIndex(prevIndex => (prevIndex + 1) % subtitles.length);
         setIsVisible(true);
       }, 1000);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
