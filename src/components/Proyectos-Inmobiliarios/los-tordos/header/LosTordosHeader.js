@@ -19,8 +19,8 @@ function LosTordosPage() {
   const [masterPlanUrl] = useState("https://lostordosmaster360-production.up.railway.app/");
   const [videoUrl] = useState("https://youtu.be/ZDqds6I9dXE?si=MHc1w8gtJ9eHtYLH");
   const [brochureUrl] = useState("https://drive.google.com/file/d/1ZkGcGwoAY_tVNYhCbGZFJe48Mg3yg28r/view");
-  const [whatsappNumber] = useState("+56984305751");
-  const [whatsappMessage] = useState("Hola, quiero más información del proyecto Los Tordos");
+  const [whatsappNumber] = useState("+56931354518");
+  const [whatsappMessage] = useState("Hola, quiero más información del proyecto");
 
   const [modalVisible, setModalVisible] = useState(false);
   const [subtitleIndex, setSubtitleIndex] = useState(0);

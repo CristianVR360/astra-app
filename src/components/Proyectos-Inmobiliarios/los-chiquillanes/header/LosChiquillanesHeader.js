@@ -12,16 +12,16 @@ const subtitles = [
   "Asombrosa belleza natural que ofrece la Región del Maule.",
   "Parcelas con vistas únicas, accesibilidad y servicios",
   "Un entorno ideal para tus aventuras o proyecto de vida",
-  "Descubre la belleza y tranquilidad de vivir en Los Chiquillanes"
-
+  "Descubre la belleza y tranquilidad de vivir en Los Chiquillanes",
+  "VENDE LEGAL PARCELAS"
 ];
 
 function LosChiquillanesPage() {
   const [masterPlanUrl] = useState("URL_del_plan_maestro_de_Los_Chiquillanes");
   const [videoUrl] = useState("URL_del_video_promocional_de_Los_Chiquillanes");
   const [brochureUrl] = useState("URL_del_brochure_de_Los_Chiquillanes");
-  const [whatsappNumber] = useState("Número_de_WhatsApp_para_contacto");
-  const [whatsappMessage] = useState("Mensaje predeterminado para WhatsApp sobre Los Chiquillanes");
+  const [whatsappNumber] = useState("+56931354518");
+  const [whatsappMessage] = useState("Hola, quiero más información del proyecto");
   const [modalVisible, setModalVisible] = useState(false);
   const [subtitleIndex, setSubtitleIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);

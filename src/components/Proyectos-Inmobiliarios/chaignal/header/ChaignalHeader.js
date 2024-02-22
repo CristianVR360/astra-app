@@ -17,8 +17,8 @@ function ChaignalPage() {
   const [masterPlanUrl] = useState("https://astra360.s3.sa-east-1.amazonaws.com/MasterPlan/Guillermo+Valenzuela/Chaignal/output/index.html");
   const [videoUrl] = useState("https://youtu.be/IJZB19xo_8k");
   const [brochureUrl] = useState("https://drive.google.com/file/d/1XQ5raObnBu9War6xac4hJSx2fiMddbEh/view");
-  const [whatsappNumber] = useState("+56984305751");
-  const [whatsappMessage] = useState("Hola, quiero más información del proyecto Chaignal");
+  const [whatsappNumber] = useState("+56931354518");
+  const [whatsappMessage] = useState("Hola, quiero más información del proyecto");
 
   const [modalVisible, setModalVisible] = useState(false);
   const [subtitleIndex, setSubtitleIndex] = useState(0);
