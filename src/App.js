@@ -5,6 +5,7 @@ import ChaignalPage from './components/Proyectos-Inmobiliarios/chaignal/Chaignal
 import LosTordosPage from './components/Proyectos-Inmobiliarios/los-tordos/LosTordosPage'; // Asegúrate de que el nombre del import coincida con el nombre del archivo y export
 import OrtSlider from './components/common/OrtSlider/OrtSlider';
 import PropuestaFuga from './components/Propuesta fuga/PropuestaFuga';
+import LosChiquillanesPage from './components/Proyectos-Inmobiliarios/los-chiquillanes/LosChiquillanesPage';
 
 
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/los-tordos" element={<LosTordosPage />} />
           <Route path="/ortslider" element={<OrtSlider/>}/>
           <Route path="/propuesta-fuga" element={<PropuestaFuga/>}/>
+          <Route path="/los-chiquillanes" element={<LosChiquillanesPage/>}/>
           {/* Puedes agregar más rutas aquí */}
         </Routes>
       </div>
