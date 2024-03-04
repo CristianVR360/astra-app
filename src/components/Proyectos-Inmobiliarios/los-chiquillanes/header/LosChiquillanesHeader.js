@@ -44,7 +44,7 @@ function LosChiquillanesPage() {
   return (
     <div className="loschiquillanes-container">
       <header className="loschiquillanes-header">
-        <video autoPlay loop muted className="background-video">
+        <video autoPlay playsInline loop muted className="background-video">
           <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="loschiquillanes-logo-container">
