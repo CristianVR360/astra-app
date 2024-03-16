@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import videoSrc from '../../../../Assets/video/chaignal3-bkgwebsite.mp4';
-import InfoModal from '../../modal-proyectos/InfoModal';
+import InfoModal from '../../../common/modal-proyectos/InfoModal';
 import './ChaignalHeader.css';
 import ramas from '../../../../Assets/ramas-Boton-quiero-saber-más.png';
 

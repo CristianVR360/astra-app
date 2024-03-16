@@ -1,18 +1,35 @@
-// Importa React y otros componentes necesarios si aún no lo has hecho
 import React from 'react';
+import LandingProyectosInmobiliarios from '../../common/LandingProyectosInmobiliarios/LandingProyectosInmobiliarios';
+import videoSrc from '../../../Assets/video/Loschiquillanes-Bkg.mp4'
+import ramas from '../../../Assets/ramas-menu.png';
+import logoSrc from '../../../Assets/img/logos/Logo chiquillanes blanco.png'; //
 
-// Asegúrate de importar el componente de encabezado correcto para LosChiquillanes
-import LosChiquillanesHeader from './header/LosChiquillanesHeader';
+// Importar los recursos necesarios (videoSrc, logoSrc, ramas, etc.)
 
-// Define el componente de la página para LosChiquillanes
-const LosChiquillanesPage = () => {
+const subtitles = [
+  "Tu nueva vida en el sur de Chile, Villarrica, Araucanía Lacustre",
+  "Parcelas de 5.000 m², con luz, agua y rol incluido",
+  "Parcelas planas, limpias y listas para comenzar a construir",
+  "Cerca de la ciudad y con fácil acceso al proyecto a través de la Ruta s63"
+];
+
+const LosTordosPage = () => {
   return (
     <div>
-      {/* Utiliza el componente de encabezado específico de LosChiquillanes */}
-      <LosChiquillanesHeader />
+      <LandingProyectosInmobiliarios
+        videoSrc={videoSrc}
+        logoSrc={logoSrc}
+        ramas={ramas}
+        subtitles={subtitles}
+        masterPlanUrl="https://www.youtube.com/watch?v=OcLg98EXq1w"
+        videoUrl="https://www.youtube.com/watch?v=OcLg98EXq1w"
+        brochureUrl="https://drive.google.com/file/d/1Xayi96nOm4dFgQF1AG4Edmynb_-q24cv/view?usp=sharing"
+        whatsappNumber="+56931354518"
+        whatsappMessage="Hola, quiero más información del proyecto los Chiquillanes"
+        callToAction="¡Hablemos ahora!"
+      />
     </div>
   );
 };
 
-// Exporta el componente para su uso en otros lugares de tu aplicación
-export default LosChiquillanesPage;
+export default LosTordosPage;

@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-.loschiquillanes-container {
-    font-family: 'Lato', sans-serif; /* Cambiado de Roboto a Lato para coherencia */
+/* Contenedor principal */
+.landing-container {
+    font-family: 'Lato', sans-serif;
 }
 
-.loschiquillanes-header {
+/* Header del contenedor principal */
+.landing-header {
+    display: flex;
+   
     position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    justify-content: center;
 }
 
+/* Video de fondo */
 .background-video {
     width: 100%;
     height: 100%;
@@ -21,24 +27,16 @@
     left: 0;
 }
 
-.loschiquillanes-header::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.3)); /* Ajustado para un efecto más oscuro */
-    top: 0;
-    left: 0;
-}
-
-.loschiquillanes-logo {
+/* Logo del proyecto */
+.landing-logo-container .landing-logo {
     max-width: 250px;
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/* Menú hamburguesa */
 .hamburger-menu {
     position: absolute;
     top: 20px;
@@ -50,23 +48,26 @@
 }
 
 .hamburger-menu:hover {
-    background-color: #4a8d7c; /* Color actualizado para Los Chiquillanes */
+    background-color: #3458bd;
     padding: 2px 4px;
     border-radius: 4px;
 }
 
-.loschiquillanes__subtitle {
+/* Subtítulos que aparecen y desaparecen */
+.landing__subtitle {
     font-family: 'Lato', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto ligeramente más fuerte */
-    margin-bottom: 0.5rem;
+    
     position: absolute;
-    bottom: 20px;
-    width: 100%;
+    top: 20px;
+    
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 4px 10px;
     opacity: 1;
     transition: opacity 1s;
 }
@@ -79,44 +80,47 @@
     opacity: 0;
 }
 
-.loschiquillanes-header__info-btn {
+/* Botón de información */
+.landing-header__info-btn {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, 110px);
+    transform: translate(-50%, -10px);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    font-weight: 700; /* Más bold que en Los Tordos */
+    font-weight: 700;
     color: #fff;
-    background-color: #007b79; /* Color de fondo actualizado */
+    background-color: #006c6d;
     border: none;
     border-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.loschiquillanes-header__info-btn:hover {
-    background-color: #005f5d; /* Color al pasar el mouse actualizado */
+.landing-header__info-btn:hover {
+    background-color: #015455;
 }
 
+/* Media queries para responsividad */
 @media (max-width: 768px) {
-    .loschiquillanes-logo {
+    .landing-logo {
         max-width: 200px;
     }
-    .loschiquillanes-header {
-    height: calc(100vh - 60px);
+
+    .landing-header {
+        height: calc(100vh - 60px);
     }
-    .logo-container {
-    top: 40%;
+
+    .landing-header__info-btn {
+        transform: translate(-50%, -20px);
+        font-size: 15px;
     }
-    .loschiquillanes-header__info-btn {
-    transform: translate(-50%, 40px);
-    font-size: 15px;
+
+    .landing__subtitle {
+        bottom: 30px;
     }
-    .loschiquillanes__subtitle {
-    bottom: 30px;
-    }
-    }
+}

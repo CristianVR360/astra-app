@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react'; // Estas son las importaciones estáticas
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AstraComponent from './components/astra/AstraComponent'; // Ejemplo de componente Astra
-import ChaignalPage from './components/Proyectos-Inmobiliarios/chaignal/ChaignalPage';
-import LosTordosPage from './components/Proyectos-Inmobiliarios/los-tordos/LosTordosPage'; // Asegúrate de que el nombre del import coincida con el nombre del archivo y export
-import OrtSlider from './components/common/OrtSlider/OrtSlider';
-import PropuestaFuga from './components/Propuesta fuga/PropuestaFuga';
-import LosChiquillanesPage from './components/Proyectos-Inmobiliarios/los-chiquillanes/LosChiquillanesPage';
+import './App.css'; // Importación de estilos al principio
 
-
-import './App.css';
+// Aquí comienzan las importaciones dinámicas, correctas en su lugar dentro del cuerpo del módulo
+const AstraComponent = lazy(() => import('./components/astra/AstraComponent'));
+const ChaignalPage = lazy(() => import('./components/Proyectos-Inmobiliarios/chaignal/ChaignalPage'));
+const LosTordosPage = lazy(() => import('./components/Proyectos-Inmobiliarios/los-tordos/LosTordosPage'));
+const OrtSlider = lazy(() => import('./components/common/OrtSlider/OrtSlider'));
+const PropuestaFuga = lazy(() => import('./components/Propuesta fuga/PropuestaFuga'));
+const LosChiquillanesPage = lazy(() => import('./components/Proyectos-Inmobiliarios/los-chiquillanes/LosChiquillanesPage'));
+const MarketingCampaignLosTordos = lazy(() => import('./components/Proyectos-Inmobiliarios/los-tordos/MarketingCampaignLosTordos'));
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<AstraComponent />} />
-          <Route path="/chaignal" element={<ChaignalPage />} />
-          <Route path="/los-tordos" element={<LosTordosPage />} />
-          <Route path="/ortslider" element={<OrtSlider/>}/>
-          <Route path="/propuesta-fuga" element={<PropuestaFuga/>}/>
-          <Route path="/los-chiquillanes" element={<LosChiquillanesPage/>}/>
-          {/* Puedes agregar más rutas aquí */}
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<AstraComponent />} />
+            <Route path="/chaignal" element={<ChaignalPage />} />
+            <Route path="/los-tordos" element={<LosTordosPage />} />
+            <Route path="/ortslider" element={<OrtSlider/>}/>
+            <Route path="/propuesta-fuga" element={<PropuestaFuga/>}/>
+            <Route path="/los-chiquillanes" element={<LosChiquillanesPage/>}/>
+            <Route path="/landing-los-tordos" element={<MarketingCampaignLosTordos/>}/>
+            {/* Puedes agregar más rutas aquí */}
+          </Routes>
+        </Suspense>
       </div>
     </Router>
   );
