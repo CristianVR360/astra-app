@@ -1,85 +1,57 @@
-.info-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    z-index: 1000;
-  }
-  
-  .info-modal__content {
-    display: flex;
-    flex-direction: column; /* Asegura que los hijos se organicen en columna */
-    align-items: center; /* Opcional: Alinea los botones al centro del modal */
-    background-color: #006c6d;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: modalFadeIn 0.5s;
-  }
-  
-  .info-modal__close-btn {
-    
-    margin-top: 10px; /* Espacio en la parte superior de cada botón */
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    background: none;
-    border:1px solid #fff;
-    padding: 3px 20px;
-    
-    border-radius: 40px;
-    cursor: pointer;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
-  }
+/* Estilos generales para el menú */
+.info-modal {
+  position: fixed;
+  top: 60px;
+  right: 7px;
+  background-color: rgba(0, 108, 109,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   
-  .info-modal__btn {
-    /* Estilos para los botones dentro del modal */
-    width: 200px; /* Anchura fija para todos los botones */
-    margin-top: 10px;
-    padding: 8px 15px;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: #003839;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .info-modal__btn, .info-modal__close-btn {
-    /* Estilos base para los botones, incluyendo el botón de cierre */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Suaviza las transiciones */
-  }
-  
-  .info-modal__btn:hover, .info-modal__btn:focus,
-  .info-modal__close-btn:hover, .info-modal__close-btn:focus {
-    /* Cambia el color de fondo y eleva el botón ligeramente al pasar el mouse o enfocar */
-    background-color: #005a5b; /* Oscurece el botón un poco */
-    transform: translateY(-3px); /* Eleva el botón */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade sombra para efecto de elevación */
-  }
-  
-  /* Opcional: Estilo específico para el botón de cierre si se desea un efecto diferente */
-  .info-modal__close-btn:hover, .info-modal__close-btn:focus {
-    color: #e0e0e0; /* Cambia el color del texto */
-    background-color: #008080; /* Cambia el color de fondo */
-    transform: scale(1.05); /* Hace el botón un poco más grande */
-  }
-  
-  @keyframes modalFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
+
+.info-modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-modal__btn {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-modal__btn:hover {
+  background-color: #3a3b3c;
+}
+
+.info-modal__close-btn {
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.info-modal__close-btn:hover {
+  color: #ffffff;
+}
+
+/* Estilos para los íconos */
+.info-modal__btn i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+}
+

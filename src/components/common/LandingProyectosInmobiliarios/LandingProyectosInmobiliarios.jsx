@@ -48,11 +48,9 @@ const LandingProyectosInmobiliarios = ({
         <div className="landing-logo-container">
           <img className="landing-logo" src={logoSrc} alt="Logo del proyecto" />
         </div>
-        <button className="landing-header__info-btn" onClick={toggleModal} style={{ backgroundImage: `url(${ramas})` }}>
-          Quiero saber <b>más</b>
-        </button>
+       
         <div className="hamburger-menu" onClick={toggleModal}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} /> Menu
         </div>
         {modalVisible && (
           <InfoModal
