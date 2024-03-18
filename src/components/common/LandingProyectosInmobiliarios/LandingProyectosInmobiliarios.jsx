@@ -42,7 +42,7 @@ const LandingProyectosInmobiliarios = ({
   return (
     <div className="landing-container">
       <header className="landing-header">
-        <video autoPlay loop muted className="background-video">
+        <video autoPlay loop muted playsInline className="background-video">
           <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="landing-logo-container">
