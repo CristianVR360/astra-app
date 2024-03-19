@@ -17,6 +17,8 @@ const LandingProyectosInmobiliarios = ({
   whatsappNumber,
   whatsappMessage,
   callToAction,
+  ubicacionUrl,
+
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [subtitleIndex, setSubtitleIndex] = useState(0);
@@ -58,6 +60,7 @@ const LandingProyectosInmobiliarios = ({
             masterPlanUrl={masterPlanUrl}
             videoUrl={videoUrl}
             instagramUrl={instagramUrl}
+            ubicacionUrl={ubicacionUrl}
             whatsappNumber={whatsappNumber}
             whatsappMessage={whatsappMessage}
           />

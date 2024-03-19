@@ -23,7 +23,8 @@ const LosTordosPage = () => {
         subtitles={subtitles}
         masterPlanUrl="https://www.youtube.com/watch?v=OcLg98EXq1w"
         videoUrl="https://www.youtube.com/watch?v=OcLg98EXq1w"
-        brochureUrl="https://drive.google.com/file/d/1Xayi96nOm4dFgQF1AG4Edmynb_-q24cv/view?usp=sharing"
+        instagramUrl="https://www.instagram.com/parcelas.astra360/"
+        ubicacionUrl="https://maps.app.goo.gl/bx8P4DbeetVfpxKG8"
         whatsappNumber="+56931354518"
         whatsappMessage="Hola, quiero más información del proyecto los Chiquillanes"
         callToAction="¡Hablemos ahora!"

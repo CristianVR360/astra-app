@@ -5,18 +5,19 @@ import ramas from '../../../Assets/ramas-Boton-quiero-saber-más.png';
 import logoSrc from '../../../Assets/img/logos/parcelas-Chaignal-logo.png';
 
 // Define las URLs y otros valores constantes fuera del componente
-const masterPlanUrl = "https://lostordosmaster360-production.up.railway.app/";
-const videoUrl = "https://youtu.be/ZDqds6I9dXE?si=MHc1w8gtJ9eHtYLH";
-const instagramUrl = "https://drive.google.com/file/d/1ZkGcGwoAY_tVNYhCbGZFJe48Mg3yg28r/view";
+const masterPlanUrl = "https://astra360.s3.sa-east-1.amazonaws.com/MasterPlan/Guillermo+Valenzuela/Chaignal/output/index.html";
+const videoUrl = "https://youtu.be/IJZB19xo_8k";
+const instagramUrl = "https://www.instagram.com/parcelas.astra360/";
 const whatsappNumber = "+56931354518";
 const whatsappMessage = "Hola, quiero más información del proyecto";
 const callToAction = "¡Hablemos ahora!";
+const ubicacionUrl = "https://maps.app.goo.gl/PKPdiCsChYYHCFxH6";
 
 const subtitles = [
-  "Tu nueva vida en el sur de Chile, Villarrica, Araucanía Lacustre",
+  "Tu nueva vida en el sur de Chile, Región de los Ríos",
   "Parcelas de 5.000 m², con luz, agua y rol incluido",
-  "Parcelas planas, limpias y listas para comenzar a construir",
-  "Cerca de la ciudad y con fácil acceso al proyecto a través de la Ruta s63"
+  "Parcelas planas, limpias y con orilla de río",
+  "Cerca de la ciudad y con fácil acceso al proyecto a través de la Ruta Internacional 203"
 ];
 
 const LosTordosPage = () => {
@@ -33,6 +34,7 @@ const LosTordosPage = () => {
         whatsappNumber={whatsappNumber}
         whatsappMessage={whatsappMessage}
         callToAction={callToAction}
+        ubicacionUrl={ubicacionUrl}
       />
     </div>
   );

@@ -23,7 +23,8 @@ const LosTordosPage = () => {
         subtitles={subtitles}
         masterPlanUrl="https://lostordosmaster360-production.up.railway.app/"
         videoUrl="https://youtu.be/ZDqds6I9dXE?si=MHc1w8gtJ9eHtYLH"
-        brochureUrl="https://drive.google.com/file/d/1ZkGcGwoAY_tVNYhCbGZFJe48Mg3yg28r/view"
+        instagramUrl="https://www.instagram.com/parcelas.astra360/"
+        ubicacionUrl="https://maps.app.goo.gl/bx8P4DbeetVfpxKG8"
         whatsappNumber="+56931354518"
         whatsappMessage="Hola, quiero más información del proyecto"
         callToAction="¡Hablemos ahora!"
