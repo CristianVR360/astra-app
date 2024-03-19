@@ -13,7 +13,7 @@ const LandingProyectosInmobiliarios = ({
   subtitles,
   masterPlanUrl,
   videoUrl,
-  brochureUrl,
+  instagramUrl,
   whatsappNumber,
   whatsappMessage,
   callToAction,
@@ -57,7 +57,7 @@ const LandingProyectosInmobiliarios = ({
             closeModal={toggleModal}
             masterPlanUrl={masterPlanUrl}
             videoUrl={videoUrl}
-            brochureUrl={brochureUrl}
+            instagramUrl={instagramUrl}
             whatsappNumber={whatsappNumber}
             whatsappMessage={whatsappMessage}
           />
