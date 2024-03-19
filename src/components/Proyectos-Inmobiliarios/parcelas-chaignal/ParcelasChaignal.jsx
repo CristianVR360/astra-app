@@ -2,12 +2,12 @@ import React from 'react';
 import LandingProyectosInmobiliarios from '../../common/LandingProyectosInmobiliarios/LandingProyectosInmobiliarios';
 import videoSrc from '../../../Assets/video/chaignal-bkg.mp4'
 import ramas from '../../../Assets/ramas-Boton-quiero-saber-más.png';
-import logoSrc from '../../../Assets/lostordosblanco.svg';
+import logoSrc from '../../../Assets/img/logos/parcelas-Chaignal-logo.png';
 
 // Define las URLs y otros valores constantes fuera del componente
 const masterPlanUrl = "https://lostordosmaster360-production.up.railway.app/";
 const videoUrl = "https://youtu.be/ZDqds6I9dXE?si=MHc1w8gtJ9eHtYLH";
-const brochureUrl = "https://drive.google.com/file/d/1ZkGcGwoAY_tVNYhCbGZFJe48Mg3yg28r/view";
+const instagramUrl = "https://drive.google.com/file/d/1ZkGcGwoAY_tVNYhCbGZFJe48Mg3yg28r/view";
 const whatsappNumber = "+56931354518";
 const whatsappMessage = "Hola, quiero más información del proyecto";
 const callToAction = "¡Hablemos ahora!";
@@ -29,7 +29,7 @@ const LosTordosPage = () => {
         subtitles={subtitles}
         masterPlanUrl={masterPlanUrl}
         videoUrl={videoUrl}
-        brochureUrl={brochureUrl}
+        instagramUrl={instagramUrl}
         whatsappNumber={whatsappNumber}
         whatsappMessage={whatsappMessage}
         callToAction={callToAction}
