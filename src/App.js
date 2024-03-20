@@ -12,14 +12,14 @@ const LosChiquillanesPage = lazy(() => import('./components/Proyectos-Inmobiliar
 const MarketingCampaignLosTordos = lazy(() => import('./components/Proyectos-Inmobiliarios/los-tordos/MarketingCampaignLosTordos'));
 const ParcelasChaignal = lazy(() => import('./components/Proyectos-Inmobiliarios/parcelas-chaignal/ParcelasChaignal'));
 const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios/hacienda-zapallar/HaciendaZapallarpage'));
+const Lomas7tasas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-7tasas/lomas-7tasasPage'));
 function App() {
   return (
     <Router>
       <div className="App">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<AstraComponent />} />
-           
+            <Route path="/" element={<AstraComponent />} />           
             <Route path="/los-tordos" element={<LosTordosPage />} />
             <Route path="/ortslider" element={<OrtSlider/>}/>
             <Route path="/propuesta-fuga" element={<PropuestaFuga/>}/>
@@ -27,6 +27,7 @@ function App() {
             <Route path="/landing-los-tordos" element={<MarketingCampaignLosTordos/>}/>
             <Route path="/parcelas-chaignal" element={<ParcelasChaignal/>}/>
             <Route path="/hacienda-zapallar" element={<HaciendaZapallar/>}/>
+            <Route path="/lomas-7tasas" element={<Lomas7tasas/>}/>
             {/* Puedes agregar más rutas aquí */}
           </Routes>
         </Suspense>
