@@ -1,0 +1,90 @@
+/* Estilos para versiones móviles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 108, 109, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 10;
+  }
+
+  
+  .menu__button {
+    color: #fff;
+    font-size: 18pt;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+   
+  .menu__button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .menu__text{
+    font-size: 12px;
+  }
+  .menu__button svg {
+    display: block;
+    margin: 0 auto 5px;
+  }
+
+  /* Menú hamburguesa */
+
+.menu__separator{
+    color: white;
+    font-size: 20px;
+}
+
+
+  /* Estilos para versiones de escritorio */
+  @media (min-width: 768px) {
+    .menu {
+        position: static;
+        width: auto;
+        background-color: rgba(0, 108, 109, 0.7);
+        backdrop-filter: blur(10px);
+        display: flex; /* Cambiado de block a flex */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        padding: 0;
+        backdrop-filter: none;
+        height: 45px; /* Ajusta según sea necesario */
+        width: 100%;
+      }
+    
+      .menu__button {
+        display: inline-flex; /* Alinea los elementos (icono y texto) en línea y en el centro */
+        align-items: center; /* Alineación vertical al centro */
+         justify-content: center; /* Alineación horizontal al centro, en caso de que haya espacio extra */
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 0;
+        display: inline-flex; /* Asegura que los botones se alineen correctamente */
+       
+        transition: all 0.3s ease-in-out;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+    
+      .menu__button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: none; /* Mantiene el botón sin escalar */
+      }
+    
+      .menu__button svg {
+        display: none;
+        margin-top: 7px;
+        margin-right: 10px; /* Ajusta la separación entre el icono y el texto */
+      }
+      .menu__text{
+        font-size: 18px;
+      }
+  }

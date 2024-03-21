@@ -36,29 +36,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* Menú hamburguesa */
-.hamburger-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    color: white;
-    font-size: 12pt;
-    background-color: rgba(0, 108, 109,1);
-    backdrop-filter: blur(10px);
-    width: 80px;
-    border-radius: 30px;
-    padding-left: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-
-}
-
-.hamburger-menu:hover {
-    background-color: rgba(0, 108, 109,0.6);
-   
-}
 
 
 /* Subtítulos que aparecen y desaparecen */

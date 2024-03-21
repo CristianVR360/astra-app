@@ -5,6 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import WhatsAppButton from '../WhatsappButton/WhatsAppButton';
 import InfoModal from '../modal-proyectos/InfoModal';
 import './LandingProyectosInmobiliarios.css';
+import MenuInferior01 from '../MenuInferior/MenuInferior';
 
 const LandingProyectosInmobiliarios = ({
   videoSrc,
@@ -51,9 +52,9 @@ const LandingProyectosInmobiliarios = ({
           <img className="landing-logo" src={logoSrc} alt="Logo del proyecto" />
         </div>
        
-        <div className="hamburger-menu" onClick={toggleModal}>
-          <FontAwesomeIcon icon={faBars} /> Menu
-        </div>
+       
+        <MenuInferior01 toggleModal={toggleModal}/>
+
         {modalVisible && (
           <InfoModal
             closeModal={toggleModal}
@@ -68,7 +69,7 @@ const LandingProyectosInmobiliarios = ({
         <div className={`landing__subtitle ${isVisible ? 'fadeIn' : 'fadeOut'}`}>
           {subtitles[subtitleIndex]}
         </div>
-        <WhatsAppButton phoneNumber={whatsappNumber} message={whatsappMessage} callToAction={callToAction} />
+         {/*<WhatsAppButton  phoneNumber={whatsappNumber} message={whatsappMessage} callToAction={callToAction} />*/}
       </header>
     </div>
   );
