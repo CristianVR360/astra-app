@@ -10,7 +10,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    z-index: 10;
+   
 
   }
 
@@ -60,21 +60,12 @@
         backdrop-filter: none;
         height: 45px; /* Ajusta según sea necesario */
         border-radius: 20px;
-   
+        z-index: 99999;
         background-image: url('../../../Assets/ramas-Boton-quiero-saber-más.png'); /* Agrega la ruta a tu imagen de fondo */
         background-size: contain; /* Ajusta la imagen para cubrir todo el espacio disponible */
         background-position: center; /* Centra la imagen en el elemento */
       }
-      .menu::before {
-        content: "";
-        background-image: url('../../../Assets/ramas-Boton-quiero-saber-más.png'); /* Agrega la ruta a tu imagen de fondo */
-        background-size: contain; /* Ajusta la imagen para cubrir todo el espacio disponible */
-        background-position: center; /* Centra la imagen en el elemento */
-        position: absolute;
-   
-        opacity: 0.5; /* Ajusta este valor para cambiar la opacidad de la imagen de fondo */
-        z-index: -1;
-      }
+     
 
       .menu__button {
         display: inline-flex; /* Alinea los elementos (icono y texto) en línea y en el centro */
