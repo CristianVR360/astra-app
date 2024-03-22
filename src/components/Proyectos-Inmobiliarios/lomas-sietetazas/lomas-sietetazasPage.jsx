@@ -13,7 +13,7 @@ const subtitles = [
   "Invierte en Paz y Belleza Natural"
 ];
 
-const LosTordosPage = () => {
+const LosTordosPage  = () => {
   return (
     <div>
       <LandingProyectosInmobiliarios

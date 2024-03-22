@@ -12,7 +12,7 @@ const LosChiquillanesPage = lazy(() => import('./components/Proyectos-Inmobiliar
 const MarketingCampaignLosTordos = lazy(() => import('./components/Proyectos-Inmobiliarios/los-tordos/MarketingCampaignLosTordos'));
 const ParcelasChaignal = lazy(() => import('./components/Proyectos-Inmobiliarios/parcelas-chaignal/ParcelasChaignal'));
 const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios/hacienda-zapallar/HaciendaZapallarpage'));
-const Lomas7tasas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-7tasas/lomas-7tasasPage'));
+const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-sietetazas/lomas-sietetazasPage'));
 function App() {
   return (
     <Router>
@@ -27,7 +27,7 @@ function App() {
             <Route path="/landing-los-tordos" element={<MarketingCampaignLosTordos/>}/>
             <Route path="/parcelas-chaignal" element={<ParcelasChaignal/>}/>
             <Route path="/hacienda-zapallar" element={<HaciendaZapallar/>}/>
-            <Route path="/lomas-7tasas" element={<Lomas7tasas/>}/>
+            <Route path="/lomas-sietetazas" element={<Lomas7tazas/>}/>
             {/* Puedes agregar más rutas aquí */}
           </Routes>
         </Suspense>

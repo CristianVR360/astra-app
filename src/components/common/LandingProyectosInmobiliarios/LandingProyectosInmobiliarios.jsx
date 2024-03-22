@@ -69,8 +69,7 @@ const LandingProyectosInmobiliarios = ({
         <div className={`landing__subtitle ${isVisible ? 'fadeIn' : 'fadeOut'}`}>
           {subtitles[subtitleIndex]}
         </div>
-         {/*<WhatsAppButton  phoneNumber={whatsappNumber} message={whatsappMessage} callToAction={callToAction} />*/}
-      </header>
+         <WhatsAppButton  phoneNumber={whatsappNumber} message={whatsappMessage} callToAction={callToAction} />     </header>
     </div>
   );
 };
