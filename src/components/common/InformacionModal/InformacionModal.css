@@ -1,0 +1,38 @@
+/* InformacionModal.css */
+.modal-container {
+    position: static;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.iframe-container {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.cerrar-btn {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    z-index: 1100;
+    cursor: pointer; /* Hace que el botón sea más interactivo al pasar el ratón */
+    padding: 10px 15px;
+    background-color: #f44336; /* Fondo rojo para el botón de cerrar */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.cerrar-btn:hover {
+    background-color: #d32f2f; /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Hace que el botón crezca ligeramente al pasar el ratón */
+}
