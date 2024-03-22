@@ -1,0 +1,138 @@
+/* Estilos generales */
+.promociones-modal {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(10px);
+  z-index: 999; /* Aumentar el valor de z-index para asegurar que el modal esté por encima de otros elementos */
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  /* Estilos para el encabezado */
+  .promociones-modal__header {
+    width: 100%;
+    max-height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .promociones-modal__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .promociones-modal__subtitle {
+    font-size: 18px;
+  }
+  
+  /* Estilos para los beneficios */
+  .promociones-modal__benefits {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .promociones-modal__benefits-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para el financiamiento */
+  .promociones-modal__financing {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .promociones-modal__financing-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .promociones-modal__financing-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para el CTA */
+  .promociones-modal__cta {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .promociones-modal__cta-button {
+    background-color: #006c6d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .promociones-modal__cta-button:hover {
+    background-color: #004d4e;
+  }
+  
+  .promociones-modal__cta-text {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Estilos para versiones de escritorio */
+  @media (min-width: 768px) {
+    .promociones-modal {
+      padding: 40px;
+    }
+  
+    .promociones-modal__header {
+      height: 400px;
+    }
+  
+    .promociones-modal__title {
+      font-size: 32px;
+    }
+  
+    .promociones-modal__subtitle {
+      font-size: 24px;
+    }
+  
+    .promociones-modal__benefits-text,
+    .promociones-modal__financing-text {
+      font-size: 18px;
+    }
+  
+    .promociones-modal__cta-button {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  
+    .promociones-modal__cta-text {
+      font-size: 16px;
+    }
+  }
