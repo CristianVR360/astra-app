@@ -1,97 +1,103 @@
-/* Estilos para versiones móviles */
-.menu {
-    position: fixed;
-    
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 108, 109, 0.7);
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-   
 
-  }
-
-  
-  .menu__button {
-    color: #fff;
-    font-size: 18pt;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-  }
-   
-  .menu__button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-  .menu__text{
-    font-size: 12px;
-  }
-  .menu__button svg {
-    display: block;
-    margin: 0 auto 5px;
-  }
-
-  /* Menú hamburguesa */
-
-.menu__separator{
-    color: white;
-    font-size: 20px;
+.navegador01 {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 108, 109, 0.7);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 
+.navegador01__button {
+  color: #fff;
+  font-size: 15pt;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  line-height: 2pt;
+  width: 35px; /* Ajusta según sea necesario */
+  height: 35px; /* Ajusta según sea necesario */
+  margin: 5px 20px;
+  padding: 8px;
+  position: relative; /* Agrega posicionamiento relativo */
+}
 
-  /* Estilos para versiones de escritorio */
-  @media (min-width: 768px) {
-    .menu {
-        margin-top: 10px;
-        position: static;
-        width: auto;
-        background-color: rgba(0, 108, 109, 0.8); 
-        backdrop-filter: blur(10px);
-        display: flex; /* Cambiado de block a flex */
-        justify-content: center; /* Centra los elementos horizontalmente */
-        align-items: center; /* Centra los elementos verticalmente */
-        padding: 0;
-        backdrop-filter: none;
-        height: 45px; /* Ajusta según sea necesario */
-        border-radius: 20px;
-        z-index: 99999;
-        background-image: url('../../../Assets/ramas-Boton-quiero-saber-más.png'); /* Agrega la ruta a tu imagen de fondo */
-        background-size: contain; /* Ajusta la imagen para cubrir todo el espacio disponible */
-        background-position: center; /* Centra la imagen en el elemento */
-      }
-     
+.navegador01__button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
 
-      .menu__button {
-        display: inline-flex; /* Alinea los elementos (icono y texto) en línea y en el centro */
-        align-items: center; /* Alineación vertical al centro */
-         justify-content: center; /* Alineación horizontal al centro, en caso de que haya espacio extra */
-        color: #fff;
-        font-size: 14px;
-        padding: 10px 20px;
-        border-radius: 20px;
-        display: inline-flex; /* Asegura que los botones se alineen correctamente */
-       
-        transition: all 0.3s ease-in-out;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      }
-    
-      .menu__button:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: none; /* Mantiene el botón sin escalar */
-      }
-    
-      .menu__button svg {
-        display: none;
-        margin-top: 7px;
-        margin-right: 10px; /* Ajusta la separación entre el icono y el texto */
-      }
-      .menu__text{
-        font-size: 18px;
-      }
+.navegador01__text {
+  font-size: 12px;
+  position: absolute; /* Agrega posicionamiento absoluto */
+  left: 50%; /* Alinea el texto al centro horizontalmente */
+  transform: translateX(-50%); /* Centra el texto horizontalmente */
+  bottom: 5px; /* Ajusta según sea necesario */
+}
+
+.navegador01__button svg {
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.navegador01__separator {
+  color: white;
+  font-size: 20px;
+}
+
+/* Estilos para versiones de escritorio */
+@media (min-width: 768px) {
+  .navegador01 {
+      margin-top: 10px;
+      position: static;
+      width: auto;
+      background-color: rgba(0, 108, 109, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      backdrop-filter: none;
+      height: 45px;
+      border-radius: 20px;
+      z-index: 99999;
+      background-image: url('../../../Assets/ramas-Boton-quiero-saber-más.png');
+      background-size: contain;
+      background-position: center;
   }
+
+  .navegador01__button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      display: inline-flex;
+      transition: all 0.3s ease-in-out;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      height: 26px;
+  }
+
+  .navegador01__button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: none;
+  }
+
+  .navegador01__button svg {
+      display: none;
+      margin-top: 7px;
+      margin-right: 10px;
+  }
+
+  .navegador01__text {
+      font-size: 18px;
+  }
+}

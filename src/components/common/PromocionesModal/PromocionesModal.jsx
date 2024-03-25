@@ -6,10 +6,13 @@ const PromocionesModal = () => {
     return (
         <div className="promociones-modal">
             <header className="promociones-modal__header" style={{ backgroundImage: `url(${backgroundImage})` }}>
+                <div className='promociones-modal__header-content'>
                 <h1 className="promociones-modal__title">Simplifica tu búsqueda: el camino más fácil hacia tu nueva propiedad.</h1>
                 <h2 className="promociones-modal__subtitle">Los Tordos de Villarrica, una inversión segura.</h2>
+                </div>
             </header>
 
+            <div className='promociones-modal-content-container'>
             <section className="promociones-modal__benefits">
                 <p className="promociones-modal__benefits-text">
                     Disfruta de una vida tranquila y conectada con la naturaleza. Nuestro proyecto ofrece redes de agua y luz soterradas, excelente accesibilidad y la tranquilidad de estar cerca de toda la zona turística lacustre.
@@ -25,9 +28,10 @@ const PromocionesModal = () => {
 
             <div className="promociones-modal__cta">
                 <button className="promociones-modal__cta-button" onClick={() => { /* Código para abrir WhatsApp */ }}>
-                    Contacta con nosotros
+                    CONTÁCTANOS
                 </button>
                 <span className="promociones-modal__cta-text">y obtén un bono de 1 millón de pesos escribiendo #miparcelaenelsur</span>
+            </div>
             </div>
         </div>
     );
