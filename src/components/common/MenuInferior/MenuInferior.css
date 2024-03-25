@@ -25,6 +25,10 @@
   margin: 5px 20px;
   padding: 8px;
   position: relative; /* Agrega posicionamiento relativo */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navegador01__button:hover {
@@ -55,7 +59,7 @@
 @media (min-width: 768px) {
   .navegador01 {
       margin-top: 10px;
-      position: static;
+      position: relative;
       width: auto;
       background-color: rgba(0, 108, 109, 0.8);
       backdrop-filter: blur(10px);
@@ -64,7 +68,7 @@
       align-items: center;
       padding: 0;
       backdrop-filter: none;
-      height: 45px;
+      height: 55px;
       border-radius: 20px;
       z-index: 99999;
       background-image: url('../../../Assets/ramas-Boton-quiero-saber-más.png');
@@ -80,10 +84,12 @@
       font-size: 14px;
       padding: 10px 20px;
       border-radius: 20px;
-      display: inline-flex;
       transition: all 0.3s ease-in-out;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      height: 26px;
+      
+      
+      
+      
   }
 
   .navegador01__button:hover {
@@ -91,13 +97,16 @@
       transform: none;
   }
 
-  .navegador01__button svg {
-      display: none;
-      margin-top: 7px;
-      margin-right: 10px;
-  }
 
   .navegador01__text {
       font-size: 18px;
+      top:28px;
+      left: auto;
+      transform: none;
+     
+  }
+  .navegador01__button svg {
+    display: none;
+   
   }
 }
