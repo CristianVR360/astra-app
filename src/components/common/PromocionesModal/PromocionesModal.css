@@ -1,10 +1,67 @@
+<<<<<<< HEAD
 /* PromocionesModal.css */
 .promociones-modal-overlay {
   position: fixed;
+=======
+
+/* PromocionesModal.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+.promociones-modal {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #ffffff;
+  background-color: #c3272b;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  display: grid; /* Cambiamos a grid */
+  grid-template-columns: 1fr 1fr; /* Dividimos en dos columnas iguales */
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.promociones-modal-content-container{
+  margin: 20px 60px;
+}
+@media (max-width: 767px) {
+  .promociones-modal {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.promociones-modal__header {
+  background-image: url('../../../Assets/img/services/loteos.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.promociones-modal__header::before {
+  content: '';
+  position: absolute;
+>>>>>>> 948ac9069c8c57d943b345d2113697e7dbb48193
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,4 +190,93 @@
     padding: 12px 24px; /* Ajusta el padding del botón para dispositivos móviles */
     font-size: 16px; /* Ajusta el tamaño del texto del botón */
   }
+=======
+  background-image: radial-gradient(circle, rgba(6, 6, 87, 0.1), rgba(1, 1, 29, 0.5)); 
+  z-index: 0; /* Asegura que el overlay esté detrás del contenido */
+}
+
+.promociones-modal__header-content{
+  position: relative;
+  margin-bottom: 100px;
+  
+  
+}
+
+
+@media (max-width: 767px) {
+  .promociones-modal__header {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+.promociones-modal__title {
+  font-size: 3.1rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.promociones-modal__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.promociones-modal__content {
+  
+  background-color: #c3272b;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .promociones-modal__content {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+.promociones-modal__benefits-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.promociones-modal__financing-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.promociones-modal__financing-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.promociones-modal__cta {
+  text-align: left;
+}
+
+.promociones-modal__cta-button {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  padding: 2rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.promociones-modal__cta-text {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+>>>>>>> 948ac9069c8c57d943b345d2113697e7dbb48193
 }

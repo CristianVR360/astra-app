@@ -3,6 +3,7 @@
 /* Contenedor principal */
 .landing-container {
     font-family: 'Lato', sans-serif;
+    z-index: 1;
 }
 
 /* Header del contenedor principal */
@@ -53,6 +54,7 @@
     opacity: 1;
     transition: opacity 1s;
     top:65%;
+    z-index: 1;
 }
 
 .fadeIn {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+
 
 import WhatsAppButton from '../WhatsappButton/WhatsAppButton';
 import InfoModal from '../modal-proyectos/InfoModal';
@@ -19,6 +19,7 @@ const LandingProyectosInmobiliarios = ({
   whatsappMessage,
   callToAction,
   ubicacionUrl,
+  brochureUrl,
 
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -53,7 +54,7 @@ const LandingProyectosInmobiliarios = ({
         </div>
        
        
-        <MenuInferior01 toggleModal={toggleModal}/>
+        <MenuInferior01  brochureUrl={brochureUrl} toggleModal={toggleModal}/>
 
         {modalVisible && (
           <InfoModal

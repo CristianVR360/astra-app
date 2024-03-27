@@ -4,7 +4,9 @@ import './InfoModal.css';
 
 function InfoModal({ closeModal, masterPlanUrl, videoUrl, instagramUrl, ubicacionUrl, showAlertButton }) {
   return (
+    <div className="info-modal-overlay">
     <div className="info-modal">
+      
       <div className="info-modal__content">
         {showAlertButton && (
           <button className="info-modal__btn master-plan">
@@ -62,6 +64,7 @@ function InfoModal({ closeModal, masterPlanUrl, videoUrl, instagramUrl, ubicacio
           <i className="fa-solid fa-times"></i> Cerrar
         </button>
       </div>
+    </div>
     </div>
   );
 }
