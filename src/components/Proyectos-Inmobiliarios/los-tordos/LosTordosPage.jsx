@@ -29,6 +29,10 @@ const LosTordosPage = () => {
         whatsappMessage="Hola, quiero más información del proyecto"
         callToAction="¡Hablemos ahora!"
         brochureUrl="https://drive.google.com/file/d/1dIm9r3wEEHhDwBpnPi0Hssiyy1ErzFHR//preview" 
+        nombreProyecto="Los Tordos"
+        colorPrimario="rgb(0, 108, 109)"
+        colorPrimarioTransparente="rgba(0, 108, 109, 0.7)"
+        colorSecundario="white"
       />
     </div>
   );

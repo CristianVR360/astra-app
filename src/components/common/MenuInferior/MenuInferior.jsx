@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faFileAlt,  faBars } from '@fortawesome/free-solid-svg-icons';
 
+
 import InformacionModal from '../InformacionModal/InformacionModal';
 
 import './MenuInferior.css';

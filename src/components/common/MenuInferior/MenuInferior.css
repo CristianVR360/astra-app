@@ -4,7 +4,7 @@
   z-index: 99999;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 108, 109, 0.7);
+  background-color:var(--colorPrimarioTransparente);
   backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .navegador01__button {
-  color: #fff;
+  color: var(--colorSecundario);
   font-size: 15pt;
   text-align: center;
   padding: 5px;
