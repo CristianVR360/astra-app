@@ -24,10 +24,11 @@ const LosTordosPage  = () => {
         masterPlanUrl="https://360total.cl/Lomas-de-Siete-Tazas/index.htm"
         videoUrl="https://youtu.be/z47tY26AoV8"
         instagramUrl="https://www.instagram.com/parcelas.astra360/"
-        ubicacionUrl="https://maps.app.goo.gl/AmiF6jSAsKWxz5Wp8"
+        ubicacionUrl="https://maps.app.goo.gl/Lnk7bL44LTaMwswy9"
         whatsappNumber="+56931354518"
         whatsappMessage="Hola, quiero más información del proyecto"
         callToAction="¡Hablemos ahora!"
+        nombreProyecto="Lomas de Siete Tazas"
       />
     </div>
   );

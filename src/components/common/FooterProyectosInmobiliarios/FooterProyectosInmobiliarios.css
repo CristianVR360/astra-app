@@ -1,0 +1,43 @@
+.footer__proyectos-inmobiliarios {
+  background: var(--colorPrimario);
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  color: var(--colorSecundario);
+}
+
+.footer__proyectos-inmobiliarios-row {
+  width: 100%;
+  margin: 1% 0%;
+ 
+  font-size: 0.8em;
+}
+
+.footer__proyectos-inmobiliarios-row .footer__proyectos-inmobiliarios__icono {
+  font-size: 2em;
+  margin: 5px;
+}
+
+.footer__proyectos-inmobiliarios-row a {
+  text-decoration: none;
+  color: var(--colorSecundario);
+  transition: 0.5s;
+}
+
+.footer__proyectos-inmobiliarios-row a:hover {
+  color: #aca7a7;
+}
+
+@media (max-width: 720px) {
+  .footer__proyectos-inmobiliarios {
+    padding: 5%;
+  }
+
+  .footer__proyectos-inmobiliarios-row ul li {
+    display: block;
+  }
+
+  .footer__proyectos-inmobiliarios-row a i {
+    margin: 0% 3%;
+  }
+}

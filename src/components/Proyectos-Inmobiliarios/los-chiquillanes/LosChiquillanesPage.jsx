@@ -28,6 +28,8 @@ const LosTordosPage = () => {
         whatsappNumber="+56931354518"
         whatsappMessage="Hola, quiero más información del proyecto los Chiquillanes"
         callToAction="¡Hablemos ahora!"
+        brochureUrl="https://drive.google.com/file/d/1Xayi96nOm4dFgQF1AG4Edmynb_-q24cv//preview"
+        nombreProyecto="Los Chiquillanes"
       />
     </div>
   );

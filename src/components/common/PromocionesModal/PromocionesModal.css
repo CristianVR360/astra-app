@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+/* PromocionesModal.css */
+.promociones-modal-overlay {
+  position: fixed;
+=======
 
 /* PromocionesModal.css */
 
@@ -51,10 +56,141 @@
 .promociones-modal__header::before {
   content: '';
   position: absolute;
+>>>>>>> 948ac9069c8c57d943b345d2113697e7dbb48193
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.promociones-modal {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 90%; /* Se ajusta al 90% del ancho de la ventana hasta un máximo de 800px */
+  margin: auto; /* Centrado horizontal */
+  display: flex;
+  flex-direction: column; /* Organiza los hijos del modal en una columna */
+  align-items: center; /* Asegura que el contenido esté centrado */
+}
+
+.promociones-modal__header {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; /* Centrado del texto en el encabezado */
+  width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+}
+
+.promociones-modal__title,
+.promociones-modal__subtitle {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.promociones-modal__title {
+  font-size: 24px;
+}
+
+.promociones-modal__subtitle {
+  font-size: 18px;
+}
+
+.promociones-modal__benefits,
+.promociones-modal__financing {
+  padding: 20px;
+  width: 100%; /* Asegura que las secciones ocupen todo el ancho */
+}
+
+.promociones-modal__benefits-text,
+.promociones-modal__financing-text {
+  margin: 0;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.promociones-modal__financing-title {
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.promociones-modal__cta {
+  background-color: #FF6347;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Asegura que la llamada a la acción ocupe todo el ancho */
+}
+
+.promociones-modal__cta-button {
+  background-color: #25D366;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none; /* Quitar el subrayado del texto */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+  .promociones-modal-overlay {
+    align-items: start; /* Alinea el inicio del modal con el inicio de la página */
+    overflow: auto; /* Permite el desplazamiento si el contenido es más grande que la pantalla */
+    padding-top: 20px; /* Agrega algo de espacio en la parte superior */
+  }
+
+  .promociones-modal {
+    width: 100%; /* El modal ocupa el ancho completo en dispositivos móviles */
+    max-width: none; /* Remueve el ancho máximo para que ocupe toda la pantalla */
+    height: auto; /* Ajuste para que el contenido defina la altura */
+    margin: 0; /* Elimina el margen para que el modal esté realmente centrado */
+    border-radius: 0; /* En móviles, se elimina el borde redondeado para usar toda la pantalla */
+    overflow-y: auto; /* Permite desplazarse verticalmente si el contenido es muy alto */
+    box-shadow: none; /* Opcional: Elimina la sombra para que parezca más integrado */
+  }
+
+  .promociones-modal__header,
+  .promociones-modal__benefits,
+  .promociones-modal__financing,
+  .promociones-modal__cta {
+    padding: 15px; /* Ajuste del padding para dispositivos móviles */
+  }
+
+  .promociones-modal__title {
+    font-size: 20px; /* Tamaño de fuente ajustado para títulos en dispositivos móviles */
+  }
+
+  .promociones-modal__subtitle {
+    font-size: 16px; /* Tamaño de fuente ajustado para subtítulos en dispositivos móviles */
+  }
+
+  .promociones-modal__financing-title {
+    font-size: 18px; /* Tamaño de fuente ajustado para el título de financiamiento en dispositivos móviles */
+  }
+
+  .promociones-modal__benefits-text,
+  .promociones-modal__financing-text {
+    font-size: 14px; /* Ajusta el tamaño del texto para mejorar la legibilidad en dispositivos móviles */
+  }
+
+  .promociones-modal__cta-button {
+    padding: 12px 24px; /* Ajusta el padding del botón para dispositivos móviles */
+    font-size: 16px; /* Ajusta el tamaño del texto del botón */
+  }
+=======
   background-image: radial-gradient(circle, rgba(6, 6, 87, 0.1), rgba(1, 1, 29, 0.5)); 
   z-index: 0; /* Asegura que el overlay esté detrás del contenido */
 }
@@ -142,4 +278,5 @@
   display: block;
   margin-top: 1rem;
   font-size: 1.2rem;
+>>>>>>> 948ac9069c8c57d943b345d2113697e7dbb48193
 }
