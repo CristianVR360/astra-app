@@ -65,21 +65,21 @@ const PaginaInicio = ({
             <a
               href={instagramLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario}}
             >
               <FaInstagram className="pagina-inicio__social-icon" />
             </a>
             <a
               href={facebookLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario }}
             >
               <FaFacebook className="pagina-inicio__social-icon" />
             </a>
             <a
               href={gpsLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario }}
             >
               <FaMapMarkerAlt className="pagina-inicio__social-icon" />
             </a>

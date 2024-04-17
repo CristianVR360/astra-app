@@ -14,6 +14,20 @@ const Carrusel = ({ CarruselLinks }) => {
     autoplay: true,
     autoplaySpeed: 25000,
     pauseOnHover: false,
+    swipe: true, // Habilita el gesto de swipe
+    vertical: false,
+    verticalSwiping: false, // Habilita el gesto de deslizamiento vertical
+    swipeToSlide: true,
+    arrows: true,
+    draggable: true,
+    
+    touchMove: true, // Habilita el movimiento táctil
+    beforeChange: (current, next) => {
+      // Realiza acciones antes de cambiar de diapositiva, si es necesario
+    },
+    afterChange: (current) => {
+      // Realiza acciones después de cambiar de diapositiva, si es necesario
+    },
   };
 
   return (
