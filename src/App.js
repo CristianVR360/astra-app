@@ -15,9 +15,10 @@ const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios
 const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-sietetazas/lomas-sietetazasPage'));
 const VogelHuaus = lazy(() => import('./components/Proyectos-Inmobiliarios/vogel-haus/VogelHaus'));
 const ParcelasVillarrica = lazy(() => import('./pages/ParcelasVillarrica/ParcelasVillarrica'));
-
-
-
+const KarolFarias = lazy(() => import('./pages/KarolFarias/KarolFarias'));
+const Kairos = lazy(() => import('./pages/Kairos/Kairos'));
+const NicolasPortiño = lazy(() => import('./pages/NicolasPortiño/NicolasPortiño'));
+const Astra360Drone = lazy(() => import('./pages/Astra360Drone/AstraDrone'));
 
 function App() {
   return (
@@ -36,7 +37,12 @@ function App() {
             <Route path="/lomas-sietetazas" element={<Lomas7tazas/>}/>
             <Route path="/vogelHaus" element={<VogelHuaus/>}/>
             <Route path="/ParcelasVillarrica" element={<ParcelasVillarrica/>}/>
+            <Route path="/KarolFarias" element={<KarolFarias/>}/>
+            <Route path="/Kairos" element={<Kairos/>}/>
+            <Route path="/NicolasPortiño" element={<NicolasPortiño/>}/>
+            <Route path="/Astra360Drone" element={<Astra360Drone/>}/>
             {/* Puedes agregar más rutas aquí */}
+
            
 
           </Routes>
