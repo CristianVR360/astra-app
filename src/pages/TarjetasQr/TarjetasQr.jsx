@@ -42,24 +42,30 @@ const TarjetasQr = ({
 
   return (
     <div className="tarjeta-qr">
-      <nav className="tarjeta-qr__nav">
-        <button
-          className={`tarjeta-qr__nav-button ${activeComponent === 'inicio' ? 'active' : ''}`}
-          onClick={() => handleNavigation('inicio')}
-          style={{ backgroundColor: colorTerciario, color: colorSecundario }}
-          
-        >
-          <i className="fas fa-home"></i>
-          <span>Inicio</span>
-        </button>
-        <button
-          className={`tarjeta-qr__nav-button ${activeComponent === 'carrusel' ? 'active' : ''}`}
-          onClick={() => handleNavigation('carrusel')}
-        >
-          <i className="fas fa-images"></i>
-          <span>Proyectos</span>
-        </button>
-      </nav>
+ <nav className="tarjeta-qr__nav">
+  <button
+    className={`tarjeta-qr__nav-button ${activeComponent === 'inicio' ? 'active' : ''}`}
+    onClick={() => handleNavigation('inicio')}
+    style={{
+      backgroundColor: activeComponent === 'inicio' ? colorPrimarioTransparente : colorPrimario,
+      color: colorSecundario,
+    }}
+  >
+    <i className="fas fa-home"></i>
+    <span>Inicio</span>
+  </button>
+  <button
+    className={`tarjeta-qr__nav-button ${activeComponent === 'carrusel' ? 'active' : ''}`}
+    onClick={() => handleNavigation('carrusel')}
+    style={{
+      backgroundColor: activeComponent === 'carrusel' ? colorTerciario : colorPrimario,
+      color: colorSecundario,
+    }}
+  >
+    <i className="fas fa-images"></i>
+    <span>Proyectos</span>
+  </button>
+</nav>
 
       <TransitionGroup>
         <CSSTransition
@@ -86,6 +92,7 @@ const TarjetasQr = ({
                 colorPrimarioTransparente={colorPrimarioTransparente}
                 colorSecundario={colorSecundario}
                 colorTerciario={colorTerciario}
+                carruselLinks={carruselLinks}
               />
             ) : (
               <Carrusel CarruselLinks={carruselLinks} />

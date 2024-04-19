@@ -3,8 +3,6 @@ import TarjetasQr from '../TarjetasQr/TarjetasQr';
 
 import logo from '../../Assets/img/logos/logo-parcelas-villarrica.png';
 import backgroundImage from '../../Assets/img/parcelasVillarrica/assets/background-Horizontal.jpg';
-
-
 import video1 from '../../Assets/video/reels/01.mp4';
 import video2 from '../../Assets/video/reels/02.mp4';
 import video3 from '../../Assets/video/reels/03.mp4';
@@ -18,6 +16,7 @@ const CarruselLinks = [
     image: fija1,
     videoUrl: video1,
     title: 'Parcelas VOGELHAUS',
+    subtitle:'',
     description: 'Proyecto exclusivo en Villarrica, con acceso a Agua y luz',
   },
   {
@@ -25,6 +24,7 @@ const CarruselLinks = [
     image: fija2,
     videoUrl: video2,
     title: 'VOGELHAUS ETAPA 2',
+    subtitle:'',
     description: 'PRÓXIMAMENTE EN VILLARRICA.',
   },
   {
@@ -32,6 +32,7 @@ const CarruselLinks = [
     image: fija3,
     videoUrl: video3,
     title: 'Proyecto de casa PREMIUM, 140 m2, 4 DORMITORIOS 2 BAÑOS',
+    subtitle:'',
     description: 'VogelHaus, como hemos denominado a este proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza y sobre todo diseño.',
   },
 ];
@@ -76,7 +77,7 @@ const ParcelasVillarrica = () => {
         urlMenu03={urlMenu03}
         gpsLink={gpsLink}
         carruselLinks={CarruselLinks}
-        
+        colorPrimario={colorPrimario}
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}

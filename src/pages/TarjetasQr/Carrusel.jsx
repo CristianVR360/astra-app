@@ -1,10 +1,13 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './Carrusel.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Carrusel.css";
 
-const Carrusel = ({ CarruselLinks }) => {
+const Carrusel = ({ CarruselLinks,  colorPrimario,
+  colorPrimarioTransparente,
+  colorSecundario,
+  colorTerciario }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -20,7 +23,7 @@ const Carrusel = ({ CarruselLinks }) => {
     swipeToSlide: true,
     arrows: true,
     draggable: true,
-    
+
     touchMove: true, // Habilita el movimiento táctil
     beforeChange: (current, next) => {
       // Realiza acciones antes de cambiar de diapositiva, si es necesario
@@ -50,17 +53,39 @@ const Carrusel = ({ CarruselLinks }) => {
                 </video>
               )}
             </div>
-            <div className="carrusel__content">
-              {(link.title || link.description) && (
-                <div className="carrusel__overlay">
-                  {link.title && (
-                    <h3 className="carrusel__title">{link.title}</h3>
-                  )}
-                  {link.description && (
-                    <p className="carrusel__description">{link.description}</p>
-                  )}
-                </div>
-              )}
+            <div
+              className="carrusel__content"
+              style={{ backgroundColor: colorPrimarioTransparente }}
+            >
+              <div className="carrusel__overlay">
+                <h2
+                  className="carrusel__title"
+                  style={{ color: colorSecundario }}
+                >
+                  {link.title}
+                </h2>
+                <h3
+                  className="carrusel__subtitle"
+                  style={{ color: colorTerciario }}
+                >
+                  {link.subtitle}
+                </h3>
+                <p
+                  className="carrusel__description"
+                  style={{ color: colorSecundario }}
+                >
+                  {link.description}
+                </p>
+                <button
+                  className="carrusel__button"
+                  style={{
+                    backgroundColor: colorPrimario,
+                    color: colorSecundario,
+                  }}
+                >
+                  Más información
+                </button>
+              </div>
             </div>
           </div>
         ))}
