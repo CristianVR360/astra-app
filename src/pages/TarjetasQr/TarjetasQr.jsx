@@ -4,6 +4,7 @@ import './TarjetasQr.css';
 import Carrusel from './Carrusel';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
+
 const TarjetasQr = ({
   logo,
   backgroundImage,
@@ -25,6 +26,8 @@ const TarjetasQr = ({
   urlMenu02,
   urlMenu03,
   carruselLinks,
+  footerAfterStyles,
+  subtitles,
 }) => {
   const [activeComponent, setActiveComponent] = useState('inicio');
 
@@ -93,6 +96,8 @@ const TarjetasQr = ({
                 colorSecundario={colorSecundario}
                 colorTerciario={colorTerciario}
                 carruselLinks={carruselLinks}
+                footerAfterStyles={footerAfterStyles}
+                subtitles={subtitles}
               />
             ) : (
               <Carrusel CarruselLinks={carruselLinks} />

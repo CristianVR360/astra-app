@@ -1,11 +1,14 @@
+body, html {
+  height: 100%;
+}
 .tarjeta-qr {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 80px);
   }
   
   .tarjeta-qr__nav {
     position: fixed;
-    bottom: 15px;
+    top: 55px;
     left: 4px;
     transform: translateY(-50%);
     z-index: 9999;

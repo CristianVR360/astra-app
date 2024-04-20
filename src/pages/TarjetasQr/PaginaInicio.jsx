@@ -1,8 +1,15 @@
 import React from "react";
-import { FaWhatsapp, FaFacebook, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import "./PaginaInicio.css";
+import Footer01 from "../../components/common/Footer01/Footer01";
 
-
+import WhatsAppButton from "../../components/common/WhatsappButton01/WhatsAppButton01";
+import Subtitle01 from "../../components/common/SubtitleComponent/Subtitle01";
 
 const PaginaInicio = ({
   logo,
@@ -21,78 +28,57 @@ const PaginaInicio = ({
   colorPrimarioTransparente,
   colorSecundario,
   colorTerciario,
+  footerAfterStyles,
+  subtitles
 }) => {
   return (
-    <div className="pagina-inicio" >
+    <div className="pagina-inicio">
       <div className="pagina-inicio__main-content">
-        <img src={backgroundImage} alt="Imagen de fondo" className="pagina-inicio__background" />
+        <img
+          src={backgroundImage}
+          alt="Imagen de fondo"
+          className="pagina-inicio__background"
+        />
+
         <div className="pagina-inicio__content">
           <div className="pagina-inicio__section">
             <div className="pagina-inicio__logo">
               <img src={logo} alt="Logo" className="pagina-inicio__logo-img" />
             </div>
-            <h1 className="pagina-inicio__title" style={{ color: colorSecundario }}>
+            <h1
+              className="pagina-inicio__title"
+              style={{ color: colorSecundario }}
+            >
               {title}
             </h1>
-            <p className="pagina-inicio__description" style={{ color: colorSecundario }}>
+            <p
+              className="pagina-inicio__description"
+              style={{ color: colorSecundario,
+                display: description ? 'block' : 'none' }}
+            >
               {description}
             </p>
+            <div className="pagina-inicio__subtitles-container">
+  <Subtitle01 subtitles={subtitles} className="pagina-inicio__subtitles"/>
+</div>
+          </div >
+          <div className="pagina-incio__whatsappButton-container">
+          <WhatsAppButton phoneNumber={telefono} callToAction={subtitle} className="pagina-inicio__whatsappButton" />
           </div>
-          <div className="pagina-inicio__section">
-            <h2 className="pagina-inicio__subtitle" style={{ color: colorSecundario }}>
-              {subtitle}
-            </h2>
-            <button
-              className="pagina-inicio__book-button"
-              style={{ backgroundColor: colorTerciario, color: colorSecundario }}
-            >
-              {bookButtonText}
-            </button>
-          </div>
-          <div className="pagina-inicio__section">
-            <p className="pagina-inicio__book-description" style={{ color: colorSecundario }}>
-              {bookDescription}
-            </p>
-            <button
-              className="pagina-inicio__consultation-button"
-              style={{ backgroundColor: colorTerciario, color: colorSecundario }}
-            >
-              <FaWhatsapp className="pagina-inicio__consultation-icon" />
-              <span className="pagina-inicio__consultation-text"> {consultationButtonText} </span>
-            </button>
-          </div>
+         
+
         </div>
         
-        <div className="pagina-inicio__footer">
-          <div className="pagina-inicio__social-links">
-            <a
-              href={instagramLink}
-              className="pagina-inicio__social-link"
-              style={{ color: colorSecundario}}
-            >
-              <FaInstagram className="pagina-inicio__social-icon" />
-            </a>
-            <a
-              href={facebookLink}
-              className="pagina-inicio__social-link"
-              style={{ color: colorSecundario }}
-            >
-              <FaFacebook className="pagina-inicio__social-icon" />
-            </a>
-            <a
-              href={gpsLink}
-              className="pagina-inicio__social-link"
-              style={{ color: colorSecundario }}
-            >
-              <FaMapMarkerAlt className="pagina-inicio__social-icon" />
-            </a>
-          </div>
-          <p className="pagina-inicio__telefono" style={{ color: colorSecundario }}>
-            <a href={`tel:${telefono}`} className="pagina-inicio__telefono-link">
-              {telefono}
-            </a>
-          </p>
-        </div>
+        <Footer01
+            className="pagina-inicio__footer"
+            instagramLink={instagramLink}
+            facebookLink={facebookLink}
+            gpsLink={gpsLink}
+            colorSecundario={colorSecundario}
+            telefono={telefono}
+            footerAfterStyles={footerAfterStyles}
+          />
+
       </div>
     </div>
   );

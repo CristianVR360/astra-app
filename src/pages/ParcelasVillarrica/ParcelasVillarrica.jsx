@@ -10,6 +10,13 @@ import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
+const subtitles = [
+  "Tu nueva vida en el sur de Chile",
+  "Parcelas de 5.000 m², con luz, agua y rol incluido",
+  "Parcelas planas, limpias y listas para comenzar a construir",
+  "Cerca de la ciudad y con fácil acceso"
+];
+
 const CarruselLinks = [
   {
     url: 'https://example.com/link1',
@@ -40,11 +47,11 @@ const CarruselLinks = [
 
 const ParcelasVillarrica = () => {
   const title = 'PARCELAS VILLARRICA';
-  const description = 'Invierte en naturaleza, tranquilidad y bienestar';
+  const description = '';
   const bookButtonText = 'VER PROYECTOS';
   const bookDescription = 'Consulta por nuestras promociones ';
   const consultationButtonText = 'CONTÁCTANOS';
-  const subtitle = '¿Quieres conocer nuestras ofertas especiales? ';
+  const subtitle = 'Hablemos ';
   const telefono = '+56996858145';
   const instagramLink = '#';
   const facebookLink = '#';
@@ -57,6 +64,9 @@ const ParcelasVillarrica = () => {
   const colorSecundario="white";
   const colorTerciario ="";
   const btnTittle="Proyectos";
+  const footerAfterStyles = {
+  background: "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 50%, rgba(0, 85, 90, 0.8) 70%, rgba(0, 85, 90, 1) 85%)"
+  };
 
   return (
     <div className="parcelas-villarrica">
@@ -82,6 +92,8 @@ const ParcelasVillarrica = () => {
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
         btnTittle={btnTittle}
+        footerAfterStyles={footerAfterStyles}
+        subtitles={subtitles}
       />
     </div>
   );
