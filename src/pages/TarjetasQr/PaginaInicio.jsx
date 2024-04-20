@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaWhatsapp,
-  FaFacebook,
-  FaInstagram,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+
 import "./PaginaInicio.css";
 import Footer01 from "../../components/common/Footer01/Footer01";
 

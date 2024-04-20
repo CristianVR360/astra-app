@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import PaginaInicio from './PaginaInicio';
-import './TarjetasQr.css';
-import Carrusel from './Carrusel';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
+import React, { useState } from "react";
+import PaginaInicio from "./PaginaInicio";
+import "./TarjetasQr.css";
+import Carrusel from "./Carrusel";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const TarjetasQr = ({
   logo,
@@ -22,6 +21,7 @@ const TarjetasQr = ({
   colorPrimarioTransparente,
   colorSecundario,
   colorTerciario,
+  colorCuaternario,
   urlMenu01,
   urlMenu02,
   urlMenu03,
@@ -29,46 +29,54 @@ const TarjetasQr = ({
   footerAfterStyles,
   subtitles,
 }) => {
-  const [activeComponent, setActiveComponent] = useState('inicio');
+  const [activeComponent, setActiveComponent] = useState("inicio");
 
   const handleNavigation = (component) => {
     setActiveComponent(component);
   };
 
   const getTransitionClassName = () => {
-    if (activeComponent === 'inicio') {
-      return 'tarjeta-qr-transition-inicio';
+    if (activeComponent === "inicio") {
+      return "tarjeta-qr-transition-inicio";
     } else {
-      return 'tarjeta-qr-transition-carrusel';
+      return "tarjeta-qr-transition-carrusel";
     }
   };
 
   return (
     <div className="tarjeta-qr">
- <nav className="tarjeta-qr__nav">
-  <button
-    className={`tarjeta-qr__nav-button ${activeComponent === 'inicio' ? 'active' : ''}`}
-    onClick={() => handleNavigation('inicio')}
-    style={{
-      backgroundColor: activeComponent === 'inicio' ? colorPrimarioTransparente : colorPrimario,
-      color: colorSecundario,
-    }}
-  >
-    <i className="fas fa-home"></i>
-    <span>Inicio</span>
-  </button>
-  <button
-    className={`tarjeta-qr__nav-button ${activeComponent === 'carrusel' ? 'active' : ''}`}
-    onClick={() => handleNavigation('carrusel')}
-    style={{
-      backgroundColor: activeComponent === 'carrusel' ? colorTerciario : colorPrimario,
-      color: colorSecundario,
-    }}
-  >
-    <i className="fas fa-images"></i>
-    <span>Proyectos</span>
-  </button>
-</nav>
+      <nav className="tarjeta-qr__nav">
+        <button
+          className={`tarjeta-qr__nav-button ${
+            activeComponent === "inicio" ? "active" : ""
+          }`}
+          onClick={() => handleNavigation("inicio")}
+          style={{
+            backgroundColor:
+              activeComponent === "inicio"
+                ?  colorCuaternario: colorTerciario
+                ,
+            color: colorSecundario,
+          }}
+        >
+          <i className="fas fa-home"></i>
+          <span>Inicio</span>
+        </button>
+        <button
+          className={`tarjeta-qr__nav-button ${
+            activeComponent === "carrusel" ? "active" : ""
+          }`}
+          onClick={() => handleNavigation("carrusel")}
+          style={{
+            backgroundColor:
+              activeComponent === "carrusel" ? colorCuaternario : colorTerciario ,
+            color: colorSecundario,
+          }}
+        >
+          <i className="fas fa-images"></i>
+          <span>Proyectos</span>
+        </button>
+      </nav>
 
       <TransitionGroup>
         <CSSTransition
@@ -77,7 +85,7 @@ const TarjetasQr = ({
           classNames={getTransitionClassName()}
         >
           <div className="tarjeta-qr__content">
-            {activeComponent === 'inicio' ? (
+            {activeComponent === "inicio" ? (
               <PaginaInicio
                 logo={logo}
                 backgroundImage={backgroundImage}
@@ -95,12 +103,17 @@ const TarjetasQr = ({
                 colorPrimarioTransparente={colorPrimarioTransparente}
                 colorSecundario={colorSecundario}
                 colorTerciario={colorTerciario}
+                colorCuaternario={colorCuaternario}
                 carruselLinks={carruselLinks}
                 footerAfterStyles={footerAfterStyles}
                 subtitles={subtitles}
               />
             ) : (
-              <Carrusel CarruselLinks={carruselLinks} />
+              <Carrusel CarruselLinks={carruselLinks} colorPrimario={colorPrimario}
+              colorPrimarioTransparente={colorPrimarioTransparente}
+              colorSecundario={colorSecundario}
+              colorTerciario={colorTerciario}
+              colorCuaternario={colorCuaternario}  />
             )}
           </div>
         </CSSTransition>

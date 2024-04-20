@@ -4,10 +4,10 @@ import TarjetasQr from '../TarjetasQr/TarjetasQr';
 import logo from '../../Assets/img/logos/logo-parcelas-villarrica.png';
 import backgroundImage from '../../Assets/img/parcelasVillarrica/assets/background-Horizontal.jpg';
 import video1 from '../../Assets/video/reels/01.mp4';
-import video2 from '../../Assets/video/reels/02.mp4';
+import video2 from '../../Assets/video/reels/parcelaVillarrica01.mp4';
 import video3 from '../../Assets/video/reels/03.mp4';
 import fija1 from '../../Assets/video/reels/fija01.jpg'
-import fija2 from '../../Assets/video/reels/fija02.jpg'
+import fija2 from '../../Assets/video/reels/parcelavillarrica01.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
 const subtitles = [
@@ -19,28 +19,28 @@ const subtitles = [
 
 const CarruselLinks = [
   {
-    url: 'https://example.com/link1',
+    url: 'https://www.astra360.cl/vogelhaus',
     image: fija1,
     videoUrl: video1,
     title: 'Parcelas VOGELHAUS',
     subtitle:'',
-    description: 'Proyecto exclusivo en Villarrica, con acceso a Agua y luz',
+    description: ' Luz y agua a los pies de tu parcela, Portón de acceso, amplios caminos, red de grifos de incendio y cerco incluido. Todo lo que necesitas está aquí',
   },
   {
-    url: 'https://example.com/link2',
+    url: 'https://wa.me/56976858145',
     image: fija2,
     videoUrl: video2,
-    title: 'VOGELHAUS ETAPA 2',
+    title: 'Hermoso Terreno en Sexta Faja,',
     subtitle:'',
-    description: 'PRÓXIMAMENTE EN VILLARRICA.',
+    description: 'UBICADOS ESTRATÉGICAMENTE entre el aeropuerto de Temuco, y Villarrica, cerca de Lagos, cordillera, volcanes e incluso mar en la costa Valdiviana.',
   },
   {
-    url: 'https://example.com/link3',
+    url: 'https://wa.me/56976858145',
     image: fija3,
     videoUrl: video3,
-    title: 'Proyecto de casa PREMIUM, 140 m2, 4 DORMITORIOS 2 BAÑOS',
+    title: 'Proyecto de casa PREMIUM, VogelHaus',
     subtitle:'',
-    description: 'VogelHaus, como hemos denominado a este proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza y sobre todo diseño.',
+    description: 'Eeste proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza. Diseño y estilo de vida.',
   },
 ];
 
@@ -59,13 +59,14 @@ const ParcelasVillarrica = () => {
   const urlMenu01 = "";
   const urlMenu02 = "";
   const urlMenu03 ="";
-  const colorPrimario ="rgb(270, 73, 42)";
-  const colorPrimarioTransparente="rgba(270, 73, 42,0.8)";
+  const colorPrimario ="rgb(60, 54, 37)";
+  const colorPrimarioTransparente="rgba(60, 54, 37,0.8)";
   const colorSecundario="white";
-  const colorTerciario ="";
+  const colorTerciario ="rgb(210,73,42)";
+  const colorCuaternario ="rgb(255,121,0)";
   const btnTittle="Proyectos";
   const footerAfterStyles = {
-  background: "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 50%, rgba(0, 85, 90, 0.8) 70%, rgba(0, 85, 90, 1) 85%)"
+  background: "linear-gradient(to bottom, rgba(60, 54, 37, 0), rgba(60, 54, 37, 0.4) 50%, rgba(60, 54, 37, 0.8) 70%, rgba(60, 54, 37, 1) 85%)"
   };
 
   return (
@@ -91,6 +92,7 @@ const ParcelasVillarrica = () => {
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
+        colorCuaternario={colorCuaternario}
         btnTittle={btnTittle}
         footerAfterStyles={footerAfterStyles}
         subtitles={subtitles}
