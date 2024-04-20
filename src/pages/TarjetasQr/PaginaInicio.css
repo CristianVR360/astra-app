@@ -1,0 +1,204 @@
+
+  
+  /* PaginaInicio.css */
+  .pagina-inicio {
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  
+  .pagina-inicio__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    z-index: -1;
+    animation: zoomEffect 60s infinite alternate;
+    
+  }
+  
+  @keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pagina-inicio__content {
+    position: relative;
+    z-index: 1;
+    margin: 20px 20px;
+    margin-bottom: 240px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Cambiado a flex-end */
+    
+  }
+  
+  .pagina-inicio__main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .pagina-inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+
+
+  
+  .pagina-inicio__logo-img {
+    width: 100px;
+  }
+  
+  .pagina-inicio__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .pagina-inicio__description {
+    font-size: 18px;
+    max-width: 80%;
+    margin: auto;
+    
+  }
+  
+  
+  
+  .pagina-inicio__book-description {
+    display: none;
+    font-size: 16px;
+    
+  }
+  
+
+  
+  
+  .footer01__social-link {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  
+  .pagina-inicio__subtitle {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 400px;
+    
+  }
+
+  .pagina-inicio__subtitles{
+    
+    font-size: 34px;
+    font-weight: bold;
+    
+  }
+  
+  .footer01__telefono {
+    font-size: 18px;
+  }
+
+  .footer01__telefono-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .footer01__telefono-link:hover {
+    text-decoration: underline;
+  }
+
+  .footer01 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 8px;
+  
+  
+  }
+
+  .footer01__after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    z-index: -10;
+  }
+
+
+
+
+/* PaginaInicio.css */
+
+/* Estilos existentes para dispositivos móviles */
+/* ... */
+
+/* Estilos específicos para desktop */
+@media (min-width: 769px) {
+  .pagina-inicio__content {
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  .pagina-inicio__section:last-child {
+    position: fixed;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  .pagina-inicio__background {
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+
+}

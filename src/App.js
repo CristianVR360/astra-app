@@ -14,6 +14,11 @@ const ParcelasChaignal = lazy(() => import('./components/Proyectos-Inmobiliarios
 const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios/hacienda-zapallar/HaciendaZapallarpage'));
 const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-sietetazas/lomas-sietetazasPage'));
 const VogelHuaus = lazy(() => import('./components/Proyectos-Inmobiliarios/vogel-haus/VogelHaus'));
+const ParcelasVillarrica = lazy(() => import('./pages/ParcelasVillarrica/ParcelasVillarrica'));
+
+
+
+
 function App() {
   return (
     <Router>
@@ -30,7 +35,10 @@ function App() {
             <Route path="/hacienda-zapallar" element={<HaciendaZapallar/>}/>
             <Route path="/lomas-sietetazas" element={<Lomas7tazas/>}/>
             <Route path="/vogelHaus" element={<VogelHuaus/>}/>
+            <Route path="/ParcelasVillarrica" element={<ParcelasVillarrica/>}/>
             {/* Puedes agregar más rutas aquí */}
+           
+
           </Routes>
         </Suspense>
       </div>
