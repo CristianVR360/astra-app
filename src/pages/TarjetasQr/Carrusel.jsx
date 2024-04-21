@@ -4,10 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carrusel.css";
 
-const Carrusel = ({ CarruselLinks,  colorPrimario,
+const Carrusel = ({
+  CarruselLinks,
+  colorPrimario,
   colorPrimarioTransparente,
   colorSecundario,
-  colorTerciario }) => {
+  colorTerciario,
+}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -23,7 +26,6 @@ const Carrusel = ({ CarruselLinks,  colorPrimario,
     swipeToSlide: true,
     arrows: true,
     draggable: true,
-
     touchMove: true, // Habilita el movimiento táctil
     beforeChange: (current, next) => {
       // Realiza acciones antes de cambiar de diapositiva, si es necesario
@@ -76,15 +78,31 @@ const Carrusel = ({ CarruselLinks,  colorPrimario,
                 >
                   {link.description}
                 </p>
-                <button
-                  className="carrusel__button"
-                  style={{
-                    backgroundColor: colorPrimario,
-                    color: colorSecundario,
-                  }}
-                >
-                  Más información
-                </button>
+                {link.url ? (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="carrusel__button"
+                    style={{
+                      backgroundColor: colorTerciario,
+                      color: colorSecundario,
+                    }}
+                  >
+                    Más información
+                  </a>
+                ) : (
+                  <span
+                    className="carrusel__button"
+                    style={{
+                      backgroundColor: colorTerciario,
+                      color: colorSecundario,
+                      cursor: 'default',
+                    }}
+                  >
+                    Próximamente
+                  </span>
+                )}
               </div>
             </div>
           </div>

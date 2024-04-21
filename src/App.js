@@ -47,7 +47,7 @@ function App() {
             <Route path="/Astra360Drone" element={<Astra360Drone/>}/>
             <Route path="/TasadorInmobiliario" element={<TasadorInmobiliario/>}/>
             <Route path="/TecnoAraucania" element={<TecnoAraucania/>}/>
-            <Route path="/TranquesChile" element={<TranquesChile/>}/>//HtVilcun
+            <Route path="/TranquesChile" element={<TranquesChile/>}/>
             <Route path="/HtVilcun" element={<HtVilcun/>}/>
 
             {/* Puedes agregar más rutas aquí */}

@@ -10,9 +10,17 @@ import fija1 from '../../Assets/video/reels/astradrone/foto-video con drone ASTR
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
+const subtitles = [
+  "Tu nueva vida en el sur de Chile",
+  "Parcelas de 5.000 m², con luz, agua y rol incluido",
+  "Parcelas planas, limpias y listas para comenzar a construir",
+  "Cerca de la ciudad y con fácil acceso"
+];
+
+
 const CarruselLinks = [
   {
-    url: 'https://example.com/link1',
+    url: 'https://wa.me/56953772483',
     image: fija1,
     videoUrl: video1,
     title: '¡TASACIÓN ONLINE RÁPIDA Y PRECISA PARA TU PROPIEDAD! DESCUBRE NUESTRO SERVICIO DE TASACIÓN EN LÍNEA',
@@ -42,9 +50,9 @@ const TasadorInmobiliario = () => {
   const title = 'ASTRA360';
   const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO';
   const bookButtonText = 'VER SERVICIOS'; //mensaje boton 1
-  const bookDescription = '¡Vuela con Nosotros!'; // mensaje boton de wsp
+  const bookDescription = '';
   const consultationButtonText = 'CONTÁCTANOS'; //mensaje boton 2
-  const subtitle = 'Fotografía y Vídeo Aéreo Profesional - Eleva tus Imágenes desde las Alturas';
+  const subtitle = 'Contactanos';// mensaje accion wsp
   const telefono = '+56952532067';
   const instagramLink = '#';
   const facebookLink = '#';
@@ -55,8 +63,14 @@ const TasadorInmobiliario = () => {
   const colorPrimario ='rgba(132, 121, 150, 1)' // color de botones
   const colorPrimarioTransparente="rgba(270, 73, 42,0.8)";
   const colorSecundario="white";
-  const colorTerciario ="";
+  const colorTerciario ="rgba(132, 121, 150, 1)";
+  const colorCuaternario ="rgba(132, 121, 150, 1)";
   const btnTittle="Proyectos";
+  const footerAfterStyles = {
+  background: "linear-gradient(to bottom, rgba(132, 121, 150, 0), rgba(132, 121, 150, 0.4) 50%, rgba(132, 121, 150, 0.8) 70%, rgba(132, 121, 150, 1) 85%)"
+  };
+  const layouType = "";
+
 
   return (
     <div className="taasador-inmobiliario">
@@ -81,7 +95,13 @@ const TasadorInmobiliario = () => {
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
-        btnTittle={btnTittle}/>
+        btnTittle={btnTittle}
+        footerAfterStyles={footerAfterStyles}
+        colorCuaternario ={colorCuaternario}
+        subtitles={subtitles}
+        
+        />
+
     </div>
   );
 };
