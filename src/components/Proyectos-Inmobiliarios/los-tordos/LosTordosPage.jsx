@@ -2,7 +2,7 @@ import React from 'react';
 import LandingProyectosInmobiliarios from '../../common/LandingProyectosInmobiliarios/LandingProyectosInmobiliarios';
 import videoSrc from '../../../Assets/video/lostordos-background.mp4';
 import ramas from '../../../Assets/ramas-Boton-quiero-saber-más.png';
-import logoSrc from '../../../Assets/lostordosblanco.svg'; //
+import logoSrc from '../../../../src/Assets/img/logos/lostordosblanco.svg'; //
 
 // Importar los recursos necesarios (videoSrc, logoSrc, ramas, etc.)
 

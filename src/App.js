@@ -14,6 +14,16 @@ const ParcelasChaignal = lazy(() => import('./components/Proyectos-Inmobiliarios
 const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios/hacienda-zapallar/HaciendaZapallarpage'));
 const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-sietetazas/lomas-sietetazasPage'));
 const VogelHuaus = lazy(() => import('./components/Proyectos-Inmobiliarios/vogel-haus/VogelHaus'));
+const ParcelasVillarrica = lazy(() => import('./pages/ParcelasVillarrica/ParcelasVillarrica'));
+const KarolFarias = lazy(() => import('./pages/KarolFarias/KarolFarias'));
+const Kairos = lazy(() => import('./pages/Kairos/Kairos'));
+const NicolasPortiño = lazy(() => import('./pages/NicolasPortiño/NicolasPortiño'));
+const Astra360Drone = lazy(() => import('./pages/Astra360Drone/AstraDrone'));
+const TasadorInmobiliario = lazy(() => import('./pages/TasadorInmobiliario/TasadorInmobiliario'));//EMDO
+const TecnoAraucania = lazy(() => import('./pages/TecnoAraucania/TecnoAraucania'));//EMDO
+const TranquesChile = lazy(() => import('./pages/TranquesChile/TranquesChile'));
+const HtVilcun = lazy(() => import('./pages/HtVilcun/HtVilcun'));
+
 function App() {
   return (
     <Router>
@@ -30,7 +40,20 @@ function App() {
             <Route path="/hacienda-zapallar" element={<HaciendaZapallar/>}/>
             <Route path="/lomas-sietetazas" element={<Lomas7tazas/>}/>
             <Route path="/vogelHaus" element={<VogelHuaus/>}/>
+            <Route path="/ParcelasVillarrica" element={<ParcelasVillarrica/>}/>
+            <Route path="/KarolFarias" element={<KarolFarias/>}/>
+            <Route path="/Kairos" element={<Kairos/>}/>
+            <Route path="/NicolasPortiño" element={<NicolasPortiño/>}/>
+            <Route path="/Astra360Drone" element={<Astra360Drone/>}/>
+            <Route path="/TasadorInmobiliario" element={<TasadorInmobiliario/>}/>
+            <Route path="/TecnoAraucania" element={<TecnoAraucania/>}/>
+            <Route path="/TranquesChile" element={<TranquesChile/>}/>//HtVilcun
+            <Route path="/HtVilcun" element={<HtVilcun/>}/>
+
             {/* Puedes agregar más rutas aquí */}
+
+           
+
           </Routes>
         </Suspense>
       </div>
