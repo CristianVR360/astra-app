@@ -100,7 +100,7 @@
   .pagina-inicio__book-button,
   .pagina-inicio__consultation-button {
     min-width: 220px;
-    display: block;
+    display: none;
     padding: 14px;
     font-size: 2vh;
     font-weight: bold;
@@ -117,13 +117,14 @@
   }
   
   .pagina-inicio__book-description {
+    display: none;
     font-size: 16px;
     
   }
   
   .pagina-inicio__consultation-button {
     background-color: #ff5a5f;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
   }
@@ -148,6 +149,7 @@
   .pagina-inicio__subtitle {
     font-size: 24px;
     font-weight: bold;
+    margin-top: 400px;
     
   }
   
@@ -225,7 +227,7 @@
 
   .pagina-inicio__consultation-button {
     min-width: unset;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #25d366;

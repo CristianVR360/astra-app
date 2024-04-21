@@ -2,6 +2,8 @@ import React from "react";
 import { FaWhatsapp, FaFacebook, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 import "./PaginaInicio.css";
 
+
+
 const PaginaInicio = ({
   logo,
   backgroundImage,
@@ -21,7 +23,7 @@ const PaginaInicio = ({
   colorTerciario,
 }) => {
   return (
-    <div className="pagina-inicio" style={{ backgroundColor: colorPrimario }}>
+    <div className="pagina-inicio" >
       <div className="pagina-inicio__main-content">
         <img src={backgroundImage} alt="Imagen de fondo" className="pagina-inicio__background" />
         <div className="pagina-inicio__content">
@@ -60,26 +62,27 @@ const PaginaInicio = ({
             </button>
           </div>
         </div>
+        
         <div className="pagina-inicio__footer">
           <div className="pagina-inicio__social-links">
             <a
               href={instagramLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario}}
             >
               <FaInstagram className="pagina-inicio__social-icon" />
             </a>
             <a
               href={facebookLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario }}
             >
               <FaFacebook className="pagina-inicio__social-icon" />
             </a>
             <a
               href={gpsLink}
               className="pagina-inicio__social-link"
-              style={{ backgroundColor: colorPrimarioTransparente }}
+              style={{ color: colorSecundario }}
             >
               <FaMapMarkerAlt className="pagina-inicio__social-icon" />
             </a>
