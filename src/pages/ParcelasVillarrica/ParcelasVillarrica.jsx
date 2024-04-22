@@ -60,13 +60,13 @@ const ParcelasVillarrica = () => {
   const urlMenu02 = "";
   const urlMenu03 ="";
   const colorPrimario ="rgb(60, 54, 37)";
-  const colorPrimarioTransparente="rgba(60, 54, 37,0.8)";
+  const colorPrimarioTransparente=" rgba(0, 85, 90, 0.8)";
   const colorSecundario="white";
   const colorTerciario ="rgb(210,73,42)";
   const colorCuaternario ="rgb(255,121,0)";
   const btnTittle="Proyectos";
   const footerAfterStyles = {
-  background: "linear-gradient(to bottom, rgba(60, 54, 37, 0), rgba(60, 54, 37, 0.4) 50%, rgba(60, 54, 37, 0.8) 70%, rgba(60, 54, 37, 1) 85%)"
+  background: "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 50%, rgba(0, 85, 90, 0.8) 70%, rgba(0, 85, 90, 1) 85%)"
   };
 
   return (

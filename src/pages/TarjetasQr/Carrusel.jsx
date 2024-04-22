@@ -20,13 +20,13 @@ const Carrusel = ({
     autoplay: true,
     autoplaySpeed: 25000,
     pauseOnHover: false,
-    swipe: true, // Habilita el gesto de swipe
+    swipe: true,
     vertical: false,
-    verticalSwiping: false, // Habilita el gesto de deslizamiento vertical
+    verticalSwiping: false,
     swipeToSlide: true,
     arrows: true,
     draggable: true,
-    touchMove: true, // Habilita el movimiento táctil
+    touchMove: true,
     beforeChange: (current, next) => {
       // Realiza acciones antes de cambiar de diapositiva, si es necesario
     },
@@ -97,7 +97,7 @@ const Carrusel = ({
                     style={{
                       backgroundColor: colorTerciario,
                       color: colorSecundario,
-                      cursor: 'default',
+                      cursor: "default",
                     }}
                   >
                     Próximamente
