@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./PaginaInicio.css";
 import Footer01 from "../../components/common/Footer01/Footer01";
 

@@ -15,8 +15,7 @@ const HaciendaZapallar = lazy(() => import('./components/Proyectos-Inmobiliarios
 const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/lomas-sietetazas/lomas-sietetazasPage'));
 const VogelHuaus = lazy(() => import('./components/Proyectos-Inmobiliarios/vogel-haus/VogelHaus'));
 const ParcelasVillarrica = lazy(() => import('./pages/ParcelasVillarrica/ParcelasVillarrica'));
-
-
+const KarolFarias = lazy(() => import('./pages/KarolFarias/KarolFarias'));
 
 
 function App() {
@@ -36,7 +35,11 @@ function App() {
             <Route path="/lomas-sietetazas" element={<Lomas7tazas/>}/>
             <Route path="/vogelHaus" element={<VogelHuaus/>}/>
             <Route path="/ParcelasVillarrica" element={<ParcelasVillarrica/>}/>
+            <Route path="/KarolFarias" element={<KarolFarias/>}/>
+            
+         
             {/* Puedes agregar más rutas aquí */}
+
            
 
           </Routes>
