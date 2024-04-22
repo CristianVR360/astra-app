@@ -38,7 +38,7 @@ const CarruselLinks = [
 ];
 
 
-const TasadorInmobiliario = () => {
+const Kairos = () => {
   const title = 'KAIROS';
   const description = '¡Juegos didácticos: donde la diversión y el aprendizaje se encuentran';
   const bookButtonText = 'VER SERVICIOS'; //mensaje boton 1
@@ -86,4 +86,4 @@ const TasadorInmobiliario = () => {
   );
 };
 
-export default TasadorInmobiliario;
+export default Kairos;
