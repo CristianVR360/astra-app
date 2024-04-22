@@ -47,13 +47,13 @@ const CarruselLinks = [
 
 
 const Astra360Drone = () => {
-  const title = 'ASTRA360';
-  const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO';
+  const title = 'ASTRA360'; //nombre de la marca
+  const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO'; //definicion principal del servicio
   const bookButtonText = 'VER SERVICIOS'; //mensaje boton 1
-  const bookDescription = '¡Vuela con Nosotros!'; // mensaje boton de wsp
+  const bookDescription = '¡Vuela con Nosotros!'; // ausente por ahora
   const consultationButtonText = 'CONTÁCTANOS'; //mensaje boton 2
   const subtitle = '¡Reserva tu Vuelo Aéreo Ahora!';//mge btn wsp
-  const telefono = '+56952532067';
+  const telefono = '+569 5253 2067';//fono footer
   const instagramLink = '#';
   const facebookLink = '#';
   const gpsLink ="";

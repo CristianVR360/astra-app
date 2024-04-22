@@ -61,7 +61,7 @@ const TasadorInmobiliario = () => {
   const urlMenu02 = "";
   const urlMenu03 ="";
   const colorPrimario ='rgba(220, 96, 5, 1)' // color de botones
-  const colorPrimarioTransparente="rgba(220, 96, 5, 1)";
+  const colorPrimarioTransparente="rgba(220, 96, 5, 0.8)";
   const colorSecundario="white";
   const colorTerciario ="rgba(54, 53, 53, 1)"; //color boton inactivo
   const colorCuaternario ="rgba(254, 96, 5, 1)";
