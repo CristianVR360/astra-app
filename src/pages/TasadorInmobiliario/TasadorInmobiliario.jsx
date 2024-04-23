@@ -10,6 +10,8 @@ import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
+
+
 const subtitles = [
   "Precisión en Valoración Inmobiliaria",
   "Asesoramiento Profesional en Tasación",
