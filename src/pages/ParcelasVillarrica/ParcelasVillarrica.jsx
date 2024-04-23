@@ -51,11 +51,11 @@ const ParcelasVillarrica = () => {
   const bookButtonText = 'VER PROYECTOS';
   const bookDescription = 'Consulta por nuestras promociones ';
   const consultationButtonText = 'CONTÁCTANOS';
-  const subtitle = 'Hablemos ';
-  const telefono = '+56996858145';
-  const instagramLink = '#';
-  const facebookLink = '#';
-  const gpsLink ="";
+  const subtitle = 'Ofertas exclusivas 🔥 ';
+  const telefono = '+56976858145';
+  const instagramLink = 'https://www.instagram.com/parcelas.vogelhaus/';
+  const facebookLink = 'https://web.facebook.com/parcelasvillarrica';
+  const gpsLink ="https://maps.app.goo.gl/KfSDRnxhvNQZF9A29?g_st=iwb";
   const urlMenu01 = "";
   const urlMenu02 = "";
   const urlMenu03 ="";
