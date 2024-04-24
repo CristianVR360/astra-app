@@ -3,62 +3,78 @@ import TarjetasQr from '../TarjetasQr/TarjetasQr';
 
 import logo from '../../Assets/img/logos/experiencia-vr -white.png';
 import backgroundImage from '../../Assets/img/backgroundsimg/Drone fondo.jpg';
-import video1 from '../../Assets/video/reels/astradrone/foto-video con drone ASTRA360_1.mp4'
-import video2 from '../../Assets/video/reels/02.mp4';
-import video3 from '../../Assets/video/reels/03.mp4';
-import fija1 from '../../Assets/video/reels/astradrone/foto-video con drone ASTRA360_1.mp4'
+import video1 from '../../Assets/video/reels/astradrone/Astra360drone1.mp4'
+import video2 from '../../Assets/video/reels/astradrone/Astra360drone2.mp4';
+import video3 from '../../Assets/video/reels/astradrone/Astra360drone3.mp4';
+import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
+
+const subtitles = [
+  "Explora Nuevas Perspectivas con Vuelos Aéreos",
+  "Imágenes y Videos Aéreos de Alta Calidad",
+  "Tecnología Avanzada para Capturas Precisas",
+  "Servicio Profesional para Proyectos Creativos"
+];
+
 
 const CarruselLinks = [
   {
     url: 'https://example.com/link1',
-    image: fija1,
+    image: "",
     videoUrl: video1,
-    title: 'FOTOGRAFÍA Y VIDEOS AÉREOS PROFESIONALES PARA TU PROYECTO: ASTRA360',
+    title: 'Fotografía 360 con Drones: Captura Perspectivas Inigualables',
     subtitle:'',
-    description: 'Descubre nuevas perspectivas con nuestra fotografía y videos aéreos. Capturamos momentos únicos desde el cielo para realzar tu proyecto. Con tecnología de vanguardia y experiencia en vuelo, ofrecemos imágenes de calidad incomparable para tu web, evento o proyecto. ¡Eleva tu visión con nosotros!',
+    description: 'Descubre nuestro servicio de fotografía 360 con drones, donde cada imagen cuenta una historia desde todos los ángulos. Con tecnología de vanguardia, capturamos vistas panorámicas impresionantes para destacar tu propiedad o proyecto. ¡Explora la innovación y la excelencia en cada imagen con nuestro equipo experto',
   },
   {
     url: 'https://example.com/link2',
-    image: fija2,
+    image: "",
     videoUrl: video2,
-    title: 'VOGELHAUS ETAPA 2',
+    title: 'Producción de Videos Aéreos con Drones: Experiencia Cinematográfica en el Cielo',
     subtitle:'',
-    description: 'PRÓXIMAMENTE EN VILLARRICA.',
+    description: 'Experimenta la magia de nuestros videos aéreos con drones. Con tecnología avanzada, damos vida a tu proyecto desde una perspectiva cinematográfica única. Desde paisajes naturales hasta escenas urbanas, cada video cuenta una historia cautivadora. Confía en nosotros para llevar tu narrativa visual al siguiente nivel.',
   },
   {
     url: 'https://example.com/link3',
-    image: fija3,
+    image: "",
     videoUrl: video3,
-    title: 'Proyecto de casa PREMIUM, 140 m2, 4 DORMITORIOS 2 BAÑOS',
+    title: 'Master Plan Interactivo 360: Visualiza tu Proyecto de Parcelas en Detalle',
     subtitle:'',
-    description: 'VogelHaus, como hemos denominado a este proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza y sobre todo diseño.',
+    description: 'Descubre nuestro master plan interactivo 360 para proyectos de parcelas. Visualiza tu proyecto en detalle desde todos los ángulos, toma decisiones informadas y optimiza tu planificación de manera efectiva. Haz realidad tu visión con nuestra herramienta avanzada.',
   },
 ];
 
 
 const Astra360Drone = () => {
-  const title = 'ASTRA360';
-  const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO';
+  const title = 'ASTRA360'; //nombre de la marca
+  const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO'; //definicion principal del servicio
   const bookButtonText = 'VER SERVICIOS'; //mensaje boton 1
-  const bookDescription = '¡Vuela con Nosotros!'; // mensaje boton de wsp
+  const bookDescription = '¡Vuela con Nosotros!'; // ausente por ahora
   const consultationButtonText = 'CONTÁCTANOS'; //mensaje boton 2
-  const subtitle = 'Fotografía y Vídeo Aéreo Profesional - Eleva tus Imágenes desde las Alturas';
-  const telefono = '+56952532067';
+  const subtitle = '¡Reserva tu Vuelo Aéreo Ahora!';//mge btn wsp
+  const telefono = '+569 5253 2067';//fono footer
   const instagramLink = '#';
   const facebookLink = '#';
   const gpsLink ="";
   const urlMenu01 = "";
   const urlMenu02 = "";
   const urlMenu03 ="";
-  const colorPrimario ='rgba(132, 121, 150, 1)' // color de botones
-  const colorPrimarioTransparente="rgba(270, 73, 42,0.8)";
-  const colorSecundario="white";
-  const colorTerciario ="";
-  const btnTittle="Proyectos";
+  const colorPrimario ='rgba(124, 252, 0, 1)' // color de botones 
+  const colorPrimarioTransparente="rgba(51, 102, 153, 1)"; //fondo de los servicios
+  const colorSecundario="white"; //color letras
+  const colorTerciario ="rgba(255, 204, 0, 1)"; //color boton inactivo
+  const colorCuaternario ="rgba(51, 102, 153, 1)";//color de boton activo
+  const btnTittle="Servicios";
+  const footerAfterStyles = {
+  background: "linear-gradient(to bottom, rgba(254, 96, 5, 0) 10%, rgba(254, 96, 5, 0) 65%, rgba(254, 96, 5, 0.1) 70%, rgba(51, 102, 153, 1) 85%)"
+  };
+  const layouTypeDesk = "";
+
+
+
   return (
-    <div className="karol-farias">
+    <div className="astra360drone">
       <TarjetasQr
         logo={logo}
         backgroundImage={backgroundImage}
@@ -80,7 +96,13 @@ const Astra360Drone = () => {
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
-        btnTittle={btnTittle}/>
+        colorCuaternario={colorCuaternario}
+        btnTittle={btnTittle}
+        footerAfterStyles={footerAfterStyles}        
+        subtitles={subtitles}
+
+        />
+
     </div>
   );
 };

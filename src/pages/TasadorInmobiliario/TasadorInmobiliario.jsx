@@ -1,62 +1,78 @@
 import React from 'react';
 import TarjetasQr from '../TarjetasQr/TarjetasQr';
 
-import logo from '../../Assets/img/logos/experiencia-vr -white.png';
+import logo from '../../Assets/img/logos/logoemdo.png';
 import backgroundImage from '../../Assets/img/backgroundsimg/TasacionEMDO.jpg';
 import video1 from '../../Assets/video/reels/emdotasacion/emdo1.mp4'
 import video2 from '../../Assets/video/reels/emdotasacion/emdo2.mp4';
 import video3 from '../../Assets/video/reels/emdotasacion/emdo3.mp4';
-import fija1 from '../../Assets/video/reels/astradrone/foto-video con drone ASTRA360_1.mp4'
+import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
+
+
+const subtitles = [
+  "Precisión en Valoración Inmobiliaria",
+  "Asesoramiento Profesional en Tasación",
+  "Tasación Online: Valoración Inmediata y Precisa para tu Propiedad",
+  "Encuentra tu Hogar Ideal con Nuestro Servicio de Corretaje"
+];
+
+
 const CarruselLinks = [
   {
-    url: 'https://example.com/link1',
-    image: fija1,
+    url: 'https://wa.me/56953772483',// numero de boton de wsp
+    image: "",
     videoUrl: video1,
-    title: '¡TASACIÓN ONLINE RÁPIDA Y PRECISA PARA TU PROPIEDAD! DESCUBRE NUESTRO SERVICIO DE TASACIÓN EN LÍNEA',
+    title: 'Tasación Presencial: Valoración Detallada a tu Propiedad',
     subtitle:'',
-    description: 'Nuestra plataforma de tasación online te ofrece una solución rápida y conveniente para obtener una valuación precisa de tu propiedad sin salir de casa. Completa nuestro formulario en línea y proporciona los detalles de tu propiedad. Nuestros expertos en tasación utilizarán esta información para realizar un análisis detallado y generar un informe de tasación en poco tiempo. Con nuestro servicio de tasación online, obtén una valuación confiable sin la necesidad de una visita presencial.',
+    description: 'Obtén una valoración detallada de tu propiedad con nuestro servicio de tasación presencial. Nuestros expertos realizan evaluaciones precisas y detalladas, incluyendo fotografías 360. Toma decisiones informadas sobre tu propiedad con nuestra ayuda.',
   },
   {
     url: 'https://example.com/link2',
-    image: fija2,
+    image: "",
     videoUrl: video2,
-    title: 'VOGELHAUS ETAPA 2',
+    title: 'Tasación Online: Rápida y Precisa para tu Propiedad',
     subtitle:'',
-    description: 'PRÓXIMAMENTE EN VILLARRICA.',
+    description: 'Nuestra plataforma de tasación online ofrece una solución rápida y precisa para valorar tu propiedad desde casa. Completa nuestro formulario en línea, proporciona los detalles y obtén un informe detallado en poco tiempo. ¡Obtén una valuación confiable sin necesidad de visitas presenciales.',
   },
   {
     url: 'https://example.com/link3',
-    image: fija3,
+    image: "",
     videoUrl: video3,
-    title: 'Proyecto de casa PREMIUM, 140 m2, 4 DORMITORIOS 2 BAÑOS',
+    title: 'Servicio Integral: Tasación, Fotografía 360 y Corretaje de Propiedades',
     subtitle:'',
-    description: 'VogelHaus, como hemos denominado a este proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza y sobre todo diseño.',
+    description: 'Maximiza el valor de tu propiedad con nuestro servicio integral. Desde la valoración detallada hasta el corretaje de propiedades, ofrecemos una experiencia confiable y completa. Obtén una evaluación precisa, atrae a compradores potenciales y toma decisiones informadas sobre tu inversión inmobiliaria.',
   },
 ];
 
 
 const TasadorInmobiliario = () => {
-  const title = 'ASTRA360';
-  const description = 'SERVICIO DE FOTOGRAFÍA Y VÍDEO AÉREO';
+  const title = 'TASACIÓN INMOBILIARIA';
+  const description = 'TASACIÓN INMOBILIARIA INTEGRAL';
   const bookButtonText = 'VER SERVICIOS'; //mensaje boton 1
-  const bookDescription = '¡Vuela con Nosotros!'; // mensaje boton de wsp
+  const bookDescription = '';
   const consultationButtonText = 'CONTÁCTANOS'; //mensaje boton 2
-  const subtitle = 'Fotografía y Vídeo Aéreo Profesional - Eleva tus Imágenes desde las Alturas';
-  const telefono = '+56952532067';
+  const subtitle = '¡Asesoramiento Inmobiliario! Contáctanos Ahora';// mensaje accion wsp
+  const telefono = '+56953772483';
   const instagramLink = '#';
   const facebookLink = '#';
   const gpsLink ="";
   const urlMenu01 = "";
   const urlMenu02 = "";
   const urlMenu03 ="";
-  const colorPrimario ='rgba(132, 121, 150, 1)' // color de botones
-  const colorPrimarioTransparente="rgba(270, 73, 42,0.8)";
+  const colorPrimario ='rgba(220, 96, 5, 1)' // color de botones
+  const colorPrimarioTransparente="rgba(220, 96, 5, 0.8)";
   const colorSecundario="white";
-  const colorTerciario ="";
-  const btnTittle="Proyectos";
+  const colorTerciario ="rgba(54, 53, 53, 1)"; //color boton inactivo
+  const colorCuaternario ="rgba(254, 96, 5, 1)";
+  const btnTittle="Servicios";
+  const footerAfterStyles = {
+  background: "linear-gradient(to bottom, rgba(254, 96, 5, 0)10%, rgba(254, 96, 5, 0.1) 65%, rgba(254, 96, 5, 0.4) 70%, rgba(254, 96, 5, 1) 85%)"
+  };
+  const layouTypeDesk = "";
+
 
   return (
     <div className="taasador-inmobiliario">
@@ -81,7 +97,13 @@ const TasadorInmobiliario = () => {
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
-        btnTittle={btnTittle}/>
+        colorCuaternario ={colorCuaternario}
+        btnTittle={btnTittle}
+        footerAfterStyles={footerAfterStyles}        
+        subtitles={subtitles}
+        
+        />
+
     </div>
   );
 };
