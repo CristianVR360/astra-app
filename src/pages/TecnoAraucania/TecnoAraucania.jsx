@@ -4,64 +4,83 @@ import TarjetasQr from '../TarjetasQr/TarjetasQr';
 import logo from '../../Assets/img/logos/experiencia-vr -white.png';
 import backgroundImage from '../../Assets/img/backgroundsimg/tecnoaraucania.jpg';
 import video1 from '../../Assets/video/reels/Tecnoaraucania/tecnoaraucania1.mp4'
-import video2 from '../../Assets/video/reels/kairos/kairos2.mp4';
-import video3 from '../../Assets/video/reels/kairos/kairos3.mp4';
+import video2 from '../../Assets/video/reels/Tecnoaraucania/tecnoaraucania 2.mp4';
+import video3 from '../../Assets/video/reels/Tecnoaraucania/tecnoaraucania 3.mp4';
 import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
 
+
+const subtitles = [
+  "Soluciones Informáticas Rápidas y Confiables | TecnoAraucanía.",
+  "Experto en Reparación de PCs y Notebooks en Temuco | TecnoAraucanía.",
+  "Servicio Técnico Especializado a la Puerta de tu Hogar | TecnoAraucanía.",
+  "Mantenimiento y Optimización de Computadores en la Araucanía | TecnoAraucanía."
+];
+
 const CarruselLinks = [
   {
-    url: 'https://example.com/link1',
-    image: fija1,
+    url: 'https://example.com/56950830673',
+    image: "",
     videoUrl: video1,
-    title: '¡TASACIÓN ONLINE RÁPIDA Y PRECISA PARA TU PROPIEDAD! DESCUBRE NUESTRO SERVICIO DE TASACIÓN EN LÍNEA',
+    title: 'Instalación y Configuración de Software y Hardware en la Araucanía.',
     subtitle:'',
-    description: 'Nuestra plataforma de tasación online te ofrece una solución rápida y conveniente para obtener una valuación precisa de tu propiedad sin salir de casa. Completa nuestro formulario en línea y proporciona los detalles de tu propiedad. Nuestros expertos en tasación utilizarán esta información para realizar un análisis detallado y generar un informe de tasación en poco tiempo. Con nuestro servicio de tasación online, obtén una valuación confiable sin la necesidad de una visita presencial.',
+    description: '¿Necesitas ayuda para instalar o configurar nuevos programas o dispositivos en tu computador? En TecnoAraucanía, nuestros técnicos especializados pueden ayudarte con la instalación y configuración de software y hardware en la comodidad de tu hogar u oficina en la región de la Araucanía. Nos aseguramos de que todo funcione perfectamente para que puedas aprovechar al máximo tu equipo.',
   },
   {
     url: 'https://example.com/link2',
-    image: fija2,
+    image: "",
     videoUrl: video2,
-    title: 'VOGELHAUS ETAPA 2',
+    title: 'Reparación de Computadores y Notebooks a Domicilio en Temuco.',
     subtitle:'',
-    description: 'PRÓXIMAMENTE EN VILLARRICA.',
+    description: 'Nuestro equipo de expertos en TecnoAraucanía ofrece servicios de reparación de computadores y notebooks a domicilio en Temuco y alrededores. Diagnosticamos y solucionamos problemas de hardware y software, asegurando que tu equipo vuelva a funcionar de manera óptima sin que tengas que salir de casa.',
   },
   {
     url: 'https://example.com/link3',
-    image: fija3,
+    image: "",
     videoUrl: video3,
-    title: 'Proyecto de casa PREMIUM, 140 m2, 4 DORMITORIOS 2 BAÑOS',
+    title: 'Mantenimiento Preventivo y Optimización de PCs y Notebooks en Temuco.',
     subtitle:'',
-    description: 'VogelHaus, como hemos denominado a este proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza y sobre todo diseño.',
+    description: 'En TecnoAraucanía, ofrecemos servicios de mantenimiento preventivo y optimización de computadores y notebooks a domicilio en Temuco. Nuestros técnicos realizarán una limpieza profunda de tu equipo, actualizarán el sistema operativo y los programas, y optimizarán el rendimiento para evitar problemas futuros y extender la vida útil de tu PC o notebook.',
   },
 ];
 
 
-
-const KarolFarias = () => {
-  const title = 'TECNOARAUCANIA';
-  const description = 'TECNOARAUCANIA: SERVICIO TÉCNICO ESPECIALIZADO PARA COMPUTADORES';
-  const bookButtonText = 'VER SERVICIOS';
-  const bookDescription = '¡TECNOARAUCANIA en WhatsApp! ¡Contáctanos ahora!';//mensaje de wsp
-  const consultationButtonText = 'CONTÁCTANOS';
-  const subtitle = '¡TECNOARAUCANIA: Servicio Técnico Profesional para Computadores! Soluciones Expertas para tus Dispositivos';
-  const telefono = '+56952532067';
+const Kairos = () => {
+  const title = 'TECNOARAUCANÍA'; //nombre de la marca
+  const description = 'Servicio Técnico de Computadores a Domicilio en Temuco | TecnoAraucanía.';//definicion principal del servicio
+  const bookButtonText = 'VER SERVICIOS';//mensaje boton 1
+  const bookDescription = '';// ausente por ahora
+  const consultationButtonText = 'CONTÁCTANOS';//mensaje boton 2
+  const subtitle = "¡Contáctanos por WhatsApp para Solucionar tus Problemas Informáticos Hoy!";//mge btn wsp
+  const telefono = '+56 9 7660 1734'; //fono de footer
   const instagramLink = '#';
   const facebookLink = '#';
   const gpsLink ="";
   const urlMenu01 = "";
   const urlMenu02 = "";
   const urlMenu03 ="";
-  const colorPrimario ='rgba(132, 121, 150, 1)' // color de botones
-  const colorPrimarioTransparente="rgba(270, 73, 42,0.8)";
-  const colorSecundario="white";
-  const colorTerciario ="";
-  const btnTittle="Productos";
+  const colorPrimario ='rgba(0, 62, 81, 1)' // color de botones 
+  const colorPrimarioTransparente="rgba(0, 164, 215, 0.8)"; //fondo de los servicios
+  const colorSecundario="white"; //color letras
+  const colorTerciario ="rgba(0, 62, 81, 1)"; //color boton inactivo
+  const colorCuaternario ="rgba(0, 164, 215, 1)";//color de boton activo
+  const btnTittle="Servicios";
+  const footerAfterStyles = {
+  background: "linear-gradient(to bottom, rgba(0, 62, 81, 0) 10%, rgba(0, 62, 81, 0.1) 65%, rgba(0, 62, 81, 0.4) 70%, rgba(0, 62, 81, 1) 85%)"
+  };
+  const layouTypeDesk = "";
 
+
+  //Paletas de colores 
+      //Azul oscuro: rgba(0, 62, 81, 1)
+      //Celeste: rgba(0, 164, 215, 1)
+      //Gris oscuro: rgba(88, 89, 91, 1)
+      //Gris claro: rgba(211, 211, 211, 1)
+      //Blanco: rgba(255, 255, 255, 1)
 
   return (
-    <div className="karol-farias">
+    <div className="kairos">
       <TarjetasQr
         logo={logo}
         backgroundImage={backgroundImage}
@@ -83,9 +102,14 @@ const KarolFarias = () => {
         colorPrimarioTransparente={colorPrimarioTransparente}
         colorSecundario={colorSecundario}
         colorTerciario={colorTerciario}
-        btnTittle={btnTittle}/>
+        colorCuaternario={colorCuaternario}
+        btnTittle={btnTittle}
+        footerAfterStyles={footerAfterStyles}        
+        subtitles={subtitles}
+
+      />
     </div>
   );
 };
 
-export default KarolFarias;
+export default Kairos;
