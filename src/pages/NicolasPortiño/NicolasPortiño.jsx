@@ -3,9 +3,9 @@ import TarjetasQr from '../TarjetasQr/TarjetasQr';
 
 import logo from '../../Assets/img/logos/experiencia-vr -white.png';
 import backgroundImage from '../../Assets/img/backgroundsimg/NicoPortiño.jpg';
-import video1 from '../../Assets/video/reels/astradrone/Astra360drone1.mp4'
-import video2 from '../../Assets/video/reels/astradrone/Astra360drone2.mp4';
-import video3 from '../../Assets/video/reels/astradrone/Astra360drone3.mp4';
+import video1 from '../../Assets/video/reels/abogado/Serv. Abogado 1.mp4'
+import video2 from '../../Assets/video/reels/abogado/Serv. Abogado 2.mp4';
+import video3 from '../../Assets/video/reels/abogado/Serv. Abogado 3.mp4';
 import fija1 from '../../Assets/video/reels/fija01.jpg'
 import fija2 from '../../Assets/video/reels/fija02.jpg'
 import fija3 from '../../Assets/video/reels/fija03.jpg'
