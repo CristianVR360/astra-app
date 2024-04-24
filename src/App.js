@@ -23,6 +23,7 @@ const TasadorInmobiliario = lazy(() => import('./pages/TasadorInmobiliario/Tasad
 const TecnoAraucania = lazy(() => import('./pages/TecnoAraucania/TecnoAraucania'));//EMDO
 const TranquesChile = lazy(() => import('./pages/TranquesChile/TranquesChile'));
 const HtVilcun = lazy(() => import('./pages/HtVilcun/HtVilcun'));
+const Astra360TourVirtual = lazy(() => import('./pages/Astra360TourVirtual/Astra360TourVirtual'));
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
             <Route path="/TecnoAraucania" element={<TecnoAraucania/>}/>
             <Route path="/TranquesChile" element={<TranquesChile/>}/>
             <Route path="/HtVilcun" element={<HtVilcun/>}/>
+            <Route path="/Astra360TourVirtual" element={<Astra360TourVirtual/>}/>
 
             {/* Puedes agregar más rutas aquí */}
 
