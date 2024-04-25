@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PaginaInicio from "./PaginaInicio";
 import "./TarjetasQr.css";
 import Carrusel from "./Carrusel";
+import ProductList from "./Vitrina";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const TarjetasQr = ({
@@ -38,8 +39,10 @@ const TarjetasQr = ({
   const getTransitionClassName = () => {
     if (activeComponent === "inicio") {
       return "tarjeta-qr-transition-inicio";
-    } else {
+    } else if (activeComponent === "carrusel") {
       return "tarjeta-qr-transition-carrusel";
+    } else {
+      return "tarjeta-qr-transition-vitrina";
     }
   };
 
@@ -53,9 +56,7 @@ const TarjetasQr = ({
           onClick={() => handleNavigation("inicio")}
           style={{
             backgroundColor:
-              activeComponent === "inicio"
-                ?  colorCuaternario: colorTerciario
-                ,
+              activeComponent === "inicio" ? colorCuaternario : colorTerciario,
             color: colorSecundario,
           }}
         >
@@ -69,12 +70,26 @@ const TarjetasQr = ({
           onClick={() => handleNavigation("carrusel")}
           style={{
             backgroundColor:
-              activeComponent === "carrusel" ? colorCuaternario : colorTerciario ,
+              activeComponent === "carrusel" ? colorCuaternario : colorTerciario,
             color: colorSecundario,
           }}
         >
           <i className="fas fa-images"></i>
           <span>Proyectos</span>
+        </button>
+        <button
+          className={`tarjeta-qr__nav-button ${
+            activeComponent === "vitrina" ? "active" : ""
+          }`}
+          onClick={() => handleNavigation("vitrina")}
+          style={{
+            backgroundColor:
+              activeComponent === "vitrina" ? colorCuaternario : colorTerciario,
+            color: colorSecundario,
+          }}
+        >
+          <i className="fas fa-store"></i>
+          <span>Vitrina</span>
         </button>
       </nav>
 
@@ -108,12 +123,17 @@ const TarjetasQr = ({
                 footerAfterStyles={footerAfterStyles}
                 subtitles={subtitles}
               />
+            ) : activeComponent === "carrusel" ? (
+              <Carrusel
+                CarruselLinks={carruselLinks}
+                colorPrimario={colorPrimario}
+                colorPrimarioTransparente={colorPrimarioTransparente}
+                colorSecundario={colorSecundario}
+                colorTerciario={colorTerciario}
+                colorCuaternario={colorCuaternario}
+              />
             ) : (
-              <Carrusel CarruselLinks={carruselLinks} colorPrimario={colorPrimario}
-              colorPrimarioTransparente={colorPrimarioTransparente}
-              colorSecundario={colorSecundario}
-              colorTerciario={colorTerciario}
-              colorCuaternario={colorCuaternario}  />
+              <ProductList />
             )}
           </div>
         </CSSTransition>

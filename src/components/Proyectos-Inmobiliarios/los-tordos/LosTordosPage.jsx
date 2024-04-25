@@ -2,9 +2,7 @@ import React from 'react';
 import LandingProyectosInmobiliarios from '../../common/LandingProyectosInmobiliarios/LandingProyectosInmobiliarios';
 import videoSrc from '../../../Assets/video/lostordos-background.mp4';
 import ramas from '../../../Assets/ramas-Boton-quiero-saber-más.png';
-import logoSrc from '../../../../src/Assets/img/logos/lostordosblanco.svg'; //
-
-// Importar los recursos necesarios (videoSrc, logoSrc, ramas, etc.)
+import logoSrc from '../../../Assets/img/logos/lostordosblanco.svg';
 
 const subtitles = [
   "Tu nueva vida en el sur de Chile, Villarrica, Araucanía Lacustre",
@@ -14,6 +12,28 @@ const subtitles = [
 ];
 
 const LosTordosPage = () => {
+  const carruselLinks = [
+    // Aquí agregarás los enlaces del carrusel en el futuro
+    // Ejemplo:
+    // {
+    //   url: 'https://example.com/link1',
+    //   image: '',
+    //   videoUrl: 'ruta/al/video1.mp4',
+    //   title: 'Título del enlace 1',
+    //   subtitle: 'Subtítulo del enlace 1',
+    //   description: 'Descripción del enlace 1',
+    // },
+    // {
+    //   url: 'https://example.com/link2',
+    //   image: '',
+    //   videoUrl: 'ruta/al/video2.mp4',
+    //   title: 'Título del enlace 2',
+    //   subtitle: 'Subtítulo del enlace 2',
+    //   description: 'Descripción del enlace 2',
+    // },
+    // ...
+  ];
+
   return (
     <div>
       <LandingProyectosInmobiliarios
@@ -28,11 +48,12 @@ const LosTordosPage = () => {
         whatsappNumber="+56931354518"
         whatsappMessage="Hola, quiero más información del proyecto"
         callToAction="¡Hablemos ahora!"
-        brochureUrl="https://drive.google.com/file/d/1dIm9r3wEEHhDwBpnPi0Hssiyy1ErzFHR//preview" 
+        brochureUrl="https://drive.google.com/file/d/1dIm9r3wEEHhDwBpnPi0Hssiyy1ErzFHR//preview"
         nombreProyecto="Parcelas Vogel Haus"
         colorPrimario="rgb(0, 108, 109)"
         colorPrimarioTransparente="rgba(0, 108, 109, 0.7)"
         colorSecundario="white"
+        carruselLinks={carruselLinks}
       />
     </div>
   );

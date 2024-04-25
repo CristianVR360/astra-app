@@ -1,8 +1,6 @@
 import React from "react";
-
 import "./PaginaInicio.css";
 import Footer01 from "../../components/common/Footer01/Footer01";
-
 import WhatsAppButton from "../../components/common/WhatsappButton01/WhatsAppButton01";
 import Subtitle01 from "../../components/common/SubtitleComponent/Subtitle01";
 
@@ -54,26 +52,23 @@ const PaginaInicio = ({
               {description}
             </p>
             <div className="pagina-inicio__subtitles-container">
-  <Subtitle01 subtitles={subtitles} className="pagina-inicio__subtitles"/>
-</div>
+              <Subtitle01 subtitles={subtitles} className="pagina-inicio__subtitles"/>
+            </div>
           </div >
           <div className="pagina-incio__whatsappButton-container">
-          <WhatsAppButton phoneNumber={telefono} callToAction={subtitle} className="pagina-inicio__whatsappButton" />
+            <WhatsAppButton phoneNumber={telefono} callToAction={subtitle} className="pagina-inicio__whatsappButton" />
           </div>
-         
-
         </div>
         
         <Footer01
-            className="pagina-inicio__footer"
-            instagramLink={instagramLink}
-            facebookLink={facebookLink}
-            gpsLink={gpsLink}
-            colorSecundario={colorSecundario}
-            telefono={telefono}
-            footerAfterStyles={footerAfterStyles}
-          />
-
+          className="pagina-inicio__footer"
+          instagramLink={instagramLink}
+          facebookLink={facebookLink}
+          gpsLink={gpsLink}
+          colorSecundario={colorSecundario}
+          telefono={telefono}
+          footerAfterStyles={footerAfterStyles}
+        />
       </div>
     </div>
   );
