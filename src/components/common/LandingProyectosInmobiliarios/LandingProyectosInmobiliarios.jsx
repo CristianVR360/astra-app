@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
-
-
 import WhatsAppButton from '../WhatsappButton/WhatsAppButton';
 import InfoModal from '../modal-proyectos/InfoModal';
 import './LandingProyectosInmobiliarios.css';
 import MenuInferior01 from '../MenuInferior/MenuInferior';
 import FooterProyectosInmobiliarios from '../FooterProyectosInmobiliarios/FooterProyectosInmobiliarios';
+import Carrusel from '../../../pages/TarjetasQr/Carrusel';
 
 const LandingProyectosInmobiliarios = ({
   videoSrc,
@@ -25,25 +23,24 @@ const LandingProyectosInmobiliarios = ({
   colorPrimario,
   colorPrimarioTransparente,
   colorSecundario,
-
+  carruselLinks = [], // Valor predeterminado como array vacío
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [subtitleIndex, setSubtitleIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [isCarruselVisible, setIsCarruselVisible] = useState(false);
+
   const colorStyles = {
     '--colorPrimario': colorPrimario,
-    '--colorPrimarioTransparente':colorPrimarioTransparente,
-    '--colorSecundario': colorSecundario
-    
+    '--colorPrimarioTransparente': colorPrimarioTransparente,
+    '--colorSecundario': colorSecundario,
   };
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
-
       setTimeout(() => {
-        setSubtitleIndex(prevIndex => (prevIndex + 1) % subtitles.length);
+        setSubtitleIndex((prevIndex) => (prevIndex + 1) % subtitles.length);
         setIsVisible(true);
       }, 1000);
     }, 5000);
@@ -55,6 +52,10 @@ const LandingProyectosInmobiliarios = ({
     setModalVisible(!modalVisible);
   };
 
+  const toggleCarrusel = () => {
+    setIsCarruselVisible(!isCarruselVisible);
+  };
+
   return (
     <div className="landing-container" style={colorStyles}>
       <header className="landing-header">
@@ -64,9 +65,15 @@ const LandingProyectosInmobiliarios = ({
         <div className="landing-logo-container">
           <img className="landing-logo" src={logoSrc} alt="Logo del proyecto" />
         </div>
-       
-       
-        <MenuInferior01  colorPrimarioTransparente={colorPrimarioTransparente} colorSecundario={colorSecundario} colorPrimario={colorPrimario} brochureUrl={brochureUrl} toggleModal={toggleModal} />
+
+        <MenuInferior01
+          colorPrimarioTransparente={colorPrimarioTransparente}
+          colorSecundario={colorSecundario}
+          colorPrimario={colorPrimario}
+          brochureUrl={brochureUrl}
+          toggleModal={toggleModal}
+          toggleCarrusel={toggleCarrusel}
+        />
 
         {modalVisible && (
           <InfoModal
@@ -82,21 +89,38 @@ const LandingProyectosInmobiliarios = ({
             colorSecundario={colorSecundario}
           />
         )}
+
+        {isCarruselVisible && (
+          <Carrusel
+            carruselLinks={carruselLinks}
+            colorPrimario={colorPrimario}
+            colorPrimarioTransparente={colorPrimarioTransparente}
+            colorSecundario={colorSecundario}
+            toggleCarrusel={toggleCarrusel}
+          />
+        )}
+
         <div className={`landing__subtitle ${isVisible ? 'fadeIn' : 'fadeOut'}`}>
           {subtitles[subtitleIndex]}
         </div>
-         <WhatsAppButton  phoneNumber={whatsappNumber} message={whatsappMessage} callToAction={callToAction} />     </header>
 
-         <FooterProyectosInmobiliarios
-         instagramUrl={instagramUrl}
-         ubicacionUrl={ubicacionUrl}
-         whatsappNumber={whatsappNumber}
-         message={whatsappMessage}
-         videoUrl={videoUrl}
-         nombreProyecto={nombreProyecto}
-         colorPrimario={colorPrimario}
-         colorSecundario={colorSecundario}
-         />
+        <WhatsAppButton
+          phoneNumber={whatsappNumber}
+          message={whatsappMessage}
+          callToAction={callToAction}
+        />
+      </header>
+
+      <FooterProyectosInmobiliarios
+        instagramUrl={instagramUrl}
+        ubicacionUrl={ubicacionUrl}
+        whatsappNumber={whatsappNumber}
+        message={whatsappMessage}
+        videoUrl={videoUrl}
+        nombreProyecto={nombreProyecto}
+        colorPrimario={colorPrimario}
+        colorSecundario={colorSecundario}
+      />
     </div>
   );
 };

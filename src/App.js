@@ -24,6 +24,7 @@ const TecnoAraucania = lazy(() => import('./pages/TecnoAraucania/TecnoAraucania'
 const TranquesChile = lazy(() => import('./pages/TranquesChile/TranquesChile'));
 const HtVilcun = lazy(() => import('./pages/HtVilcun/HtVilcun'));
 const Astra360TourVirtual = lazy(() => import('./pages/Astra360TourVirtual/Astra360TourVirtual'));
+const Portafolio = lazy(() => import('./components/Portafolio/Portafolio'));
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
             <Route path="/TranquesChile" element={<TranquesChile/>}/>
             <Route path="/HtVilcun" element={<HtVilcun/>}/>
             <Route path="/Astra360TourVirtual" element={<Astra360TourVirtual/>}/>
+            <Route path="/Portafolio" element={<Portafolio/>}/>
 
             {/* Puedes agregar más rutas aquí */}
 

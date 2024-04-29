@@ -1,14 +1,14 @@
 import React from 'react';
 import TarjetasQr from '../TarjetasQr/TarjetasQr';
 
-import logo from '../../Assets/img/logos/experiencia-vr -white.png';
+//import logo from '../../Assets/img/logos/experiencia-vr -white.png';
 import backgroundImage from '../../Assets/img/backgroundsimg/tecnoaraucania.jpg';
 import video1 from '../../Assets/video/reels/htvilcun/htvilcún1.mp4'
 import video2 from '../../Assets/video/reels/htvilcun/htvilcún2.mp4';
 import video3 from '../../Assets/video/reels/htvilcun/htvilcún3.mp4';
-import fija1 from '../../Assets/video/reels/fija01.jpg'
-import fija2 from '../../Assets/video/reels/fija02.jpg'
-import fija3 from '../../Assets/video/reels/fija03.jpg'
+//import fija1 from '../../Assets/video/reels/fija01.jpg'
+//import fija2 from '../../Assets/video/reels/fija02.jpg'
+//import fija3 from '../../Assets/video/reels/fija03.jpg'
 
 
 const subtitles = [
@@ -69,7 +69,7 @@ const Kairos = () => {
   const footerAfterStyles = {
   background: "linear-gradient(to bottom, rgba(0, 179, 152, 0) 10%, rgba(0, 179, 152, 0.1) 65%, rgba(0, 179, 152, 0.4) 70%, rgba(0, 179, 152, 1) 85%)"
   };
-  const layouTypeDesk = "";
+  //const layouTypeDesk = "";
 
 
   //Paletas de colores 
@@ -82,7 +82,7 @@ const Kairos = () => {
   return (
     <div className="kairos">
       <TarjetasQr
-        logo={logo}
+        //logo={logo}
         backgroundImage={backgroundImage}
         title={title}
         description={description}
