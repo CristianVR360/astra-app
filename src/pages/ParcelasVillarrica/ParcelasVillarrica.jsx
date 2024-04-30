@@ -38,9 +38,9 @@ const CarruselLinks = [
     url: 'https://wa.me/56976858145',
     image: fija3,
     videoUrl: video3,
-    title: 'Proyecto de casa PREMIUM, VogelHaus',
+    title: 'Casa PREMIUM, en Villarrica',
     subtitle:'',
-    description: 'Eeste proyecto es una casa de alto estandar, con amplias habitaciones, cocina y terraza. Diseño y estilo de vida.',
+    description: 'Casa nueva de altos estandares en diseño y construcción. Amplias habitaciones, cocina y terraza.',
   },
 ];
 

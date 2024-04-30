@@ -16,6 +16,15 @@ const Lomas7tazas = lazy(() => import('./components/Proyectos-Inmobiliarios/loma
 const VogelHuaus = lazy(() => import('./components/Proyectos-Inmobiliarios/vogel-haus/VogelHaus'));
 const ParcelasVillarrica = lazy(() => import('./pages/ParcelasVillarrica/ParcelasVillarrica'));
 const KarolFarias = lazy(() => import('./pages/KarolFarias/KarolFarias'));
+const Kairos = lazy(() => import('./pages/Kairos/Kairos'));
+const NicolasPortiño = lazy(() => import('./pages/NicolasPortiño/NicolasPortiño'));
+
+
+const TecnoAraucania = lazy(() => import('./pages/TecnoAraucania/TecnoAraucania'));//EMDO
+const TranquesChile = lazy(() => import('./pages/TranquesChile/TranquesChile'));
+const HtVilcun = lazy(() => import('./pages/HtVilcun/HtVilcun'));
+
+const Nualart = lazy(() => import('./TourVirtuales/Nualart/Pontevedra/VistaAerea'));
 
 
 function App() {
@@ -36,8 +45,17 @@ function App() {
             <Route path="/vogelHaus" element={<VogelHuaus/>}/>
             <Route path="/ParcelasVillarrica" element={<ParcelasVillarrica/>}/>
             <Route path="/KarolFarias" element={<KarolFarias/>}/>
+            <Route path="/Kairos" element={<Kairos/>}/>
+            <Route path="/NicolasPortiño" element={<NicolasPortiño/>}/>
             
-         
+            
+            <Route path="/TecnoAraucania" element={<TecnoAraucania/>}/>
+            <Route path="/TranquesChile" element={<TranquesChile/>}/>
+            <Route path="/HtVilcun" element={<HtVilcun/>}/>
+
+            <Route path="/Nualart" element={<Nualart/>}/>
+            
+
             {/* Puedes agregar más rutas aquí */}
 
            

@@ -28,7 +28,7 @@ const VogelHausPage = () => {
         whatsappNumber="+56976858145"
         whatsappMessage="Hola, quiero más información del proyecto"
         callToAction="Dejanos tu mensaje!"
-        brochureUrl="https://docs.google.com/presentation/d/1hW3OM8p9uP-j4lDwDXOvjn8yIGSW8zlf/preview" 
+        brochureUrl="https://drive.google.com/file/d/1pNTXunMYVSOYS98zQjH-1zB5bPVRJzuh//preview" 
         nombreProyecto="Parcelas Villarrica"
         colorPrimario="rgb(0, 108, 109)"
         colorPrimarioTransparente="rgba(0, 108, 109, 0.7)"
