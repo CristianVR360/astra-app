@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; // Importación de estilos al principio
 
 // Aquí comienzan las importaciones dinámicas, correctas en su lugar dentro del cuerpo del módulo
-const AstraComponent = lazy(() => import('./components/astra/AstraComponent'));
+const AstraComponent = lazy(() => import('./pages/AstraIndex'));
 
 const LosTordosPage = lazy(() => import('./components/Proyectos-Inmobiliarios/los-tordos/LosTordosPage'));
 const OrtSlider = lazy(() => import('./components/common/OrtSlider/OrtSlider'));
